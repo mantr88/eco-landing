@@ -12,6 +12,10 @@ export const CompanyTitle = styled.p`
   font-size: 38px;
   font-weight: 500;
   letter-spacing: -1.32px;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.accent};
+  }
 `;
 
 export const Tagline = styled.p`
@@ -35,4 +39,8 @@ export const BurgerWrap = styled.div`
   padding: 4px 12px;
   border-radius: 500px;
   background: ${(props) => props.theme.colors.accent_light};
+
+  &:hover {
+    background: ${(props) => props.theme.colors.accent};
+  }
 `;

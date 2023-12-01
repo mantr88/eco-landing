@@ -33,8 +33,6 @@ export const ItemList = styled.li`
   &:hover,
   &:focus {
     color: ${(props) => props.theme.colors.accent};
-    /* fill: ${(props) => props.theme.colors.accent};
-    stroke: ${(props) => props.theme.colors.accent}; */
   }
 
   &:hover svg path,
