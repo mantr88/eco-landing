@@ -4,12 +4,16 @@ export const HeaderWrap = styled.header`
   position: fixed;
   display: flex;
   align-items: center;
+  margin: 0;
+  margin-top: 36px;
+  top: 0;
+  min-width: 360px;
 `;
 
 export const CompanyTitle = styled.p`
   margin-left: 4px;
   font-family: "FONTSPRING DEMO - All Round Gothic Thick";
-  font-size: 38px;
+  font-size: 33px;
   font-weight: 500;
   letter-spacing: -1.32px;
 

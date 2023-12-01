@@ -9,6 +9,7 @@ export const themes = Object.freeze({
     main_bg: "#F3F5FA",
     second_bg: "#EAEDF1",
     mobile_menu_bg: "rgba(23, 61, 51, 0.75)",
+    mobile_menu_overlay_bg: "rgba(23, 61, 51, 0.25)",
   },
   breakpoints: {
     xs: "360px",

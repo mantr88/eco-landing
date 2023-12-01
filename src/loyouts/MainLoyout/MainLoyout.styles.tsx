@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin: 20 auto;
-  padding: 0;
-
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   @media screen and (min-width: ${(props) => props.theme.breakpoints.s}) {
     width: 480px;
   }

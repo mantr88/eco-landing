@@ -11,12 +11,15 @@ export const Overlay = styled.div`
   width: 100%;
   z-index: 2;
 
-  background-color: ${(props) => props.theme.colors.main_bg};
+  background: ${(props) => props.theme.colors.mobile_menu_overlay_bg};
+
+  backdrop-filter: blur(2px);
 `;
 
 export const Content = styled.div`
   position: absolute;
   top: 0;
+  margin-top: 36px;
   padding: 24px;
   border-radius: 25px;
   background-color: ${(props) => props.theme.colors.mobile_menu_bg};
