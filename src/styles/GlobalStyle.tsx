@@ -6,8 +6,10 @@ body {
   margin: 0;
 
   font-family: Fira Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.2;
   font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
     color: ${(props) => props.theme.colors.main_text};
   font-synthesis: none;
   text-rendering: optimizeLegibility;
