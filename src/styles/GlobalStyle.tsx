@@ -50,6 +50,7 @@ li {
 }
 
 a {
+  color: ${(props) => props.theme.colors.main_text};
   text-decoration: none;
   font-style: normal;
   cursor: pointer;

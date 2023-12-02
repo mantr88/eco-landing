@@ -12,7 +12,7 @@ import PopupWindow from "../../ui/PopupWindow/PopupWindow";
 import { BurgerMenu } from "../../components/BurgerMenu/BurgerMenu";
 
 export function Header() {
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
 
   const onClose = () => {
     document.body.style.overflow = "visible";

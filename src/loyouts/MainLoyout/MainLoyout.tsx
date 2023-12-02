@@ -1,10 +1,10 @@
-import { ReactElement } from "react";
+import { ReactNode } from "react";
 import { GlobalStyle } from "../../styles/GlobalStyle";
 import { Header } from "../Header/Header";
 import { Container } from "./MainLoyout.styles";
 
 type Props = {
-  children: ReactElement;
+  children: ReactNode[];
 };
 export function MainLoyout({ children }: Props) {
   return (
