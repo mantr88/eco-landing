@@ -16,8 +16,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-
-  background-color:${(props) => props.theme.colors.main_bg};;
+scroll-behavior: smooth;
+  background-color:${(props) => props.theme.colors.main_bg};
 }
 
 html,
