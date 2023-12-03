@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./QuestionTab.styled.css";
-import { Minus } from "../svgElements/Minus";
-import { Plus } from "../svgElements/Plus";
+import { Minus } from "../../ui/svgElements/Minus";
+import { Plus } from "../../ui/svgElements/Plus";
 type faq = {
   a: string;
   q: string;
@@ -14,8 +14,8 @@ type Props = {
 type Handler = (id: number) => void;
 
 function QuestionTab({ faqList }: Props) {
-  const itemRef = useRef(null);
-  const [openId, setOpenId] = useState<number | null>(null);
+  const itemRef = useRef(0);
+  const [openId, setOpenId] = useState<number | null>(0);
 
   const clickHandler: Handler = (id) => {
     id === openId ? setOpenId(null) : setOpenId(id);

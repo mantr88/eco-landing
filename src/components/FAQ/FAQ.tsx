@@ -1,4 +1,4 @@
-import QuestionTab from "../../ui/QuestionTab/QuestionTab";
+import QuestionTab from "../QuestionTab/QuestionTab";
 import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
 import { Dot } from "../../ui/svgElements/Dot";
 import { ContactLink, FAQSection } from "./FAQ.styled";
