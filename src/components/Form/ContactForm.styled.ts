@@ -3,11 +3,14 @@ import styled from "styled-components";
 import { Field } from "formik";
 
 export const FormWrap = styled.div`
+  min-width: 320px;
   display: flex;
   gap: 28px;
   flex-direction: column;
   padding: 36px 12px;
   margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
 
   text-align: justify;
   letter-spacing: -0.64px;
@@ -20,6 +23,7 @@ export const Label = styled.label`
 `;
 
 export const InputField = styled(Field)`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -35,6 +39,10 @@ export const InputField = styled(Field)`
   border-bottom: 1px solid ${(props) => props.theme.colors.accent};
 `;
 
+export const ErrorElement = styled.div`
+  margin-top: 8px;
+  color: ${(props) => props.theme.colors.error_text};
+`;
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: end;

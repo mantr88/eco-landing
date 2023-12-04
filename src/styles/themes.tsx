@@ -6,6 +6,7 @@ export const themes = Object.freeze({
     grey_text: "#828382",
     mobile_menu_text: "#fff",
     transparent_text: "rgba(23, 61, 51, 0.03)",
+    error_text: "#D28B8B",
     main_bg: "#F3F5FA",
     second_bg: "#EAEDF1",
     mobile_menu_bg: "rgba(23, 61, 51, 0.75)",

@@ -1,7 +1,8 @@
-import { Formik, Form, FormikHelpers } from "formik";
-import * as yup from "yup";
+import { ErrorMessage, Form, Formik, FormikHelpers } from "formik";
+import * as Yup from "yup";
 import {
   BtnWrap,
+  ErrorElement,
   FormWrap,
   InputField,
   Label,
@@ -10,22 +11,25 @@ import {
 import { ArrowWrap } from "../Banner/Banner.styled";
 import { ArrowRight } from "../../ui/svgElements/ArrowRight";
 
-const schema = yup.object().shape({
-  name: yup
-    .string()
+const initialValues = {
+  name: "",
+  email: "",
+  phone: "",
+  message: "",
+};
+
+const schema = Yup.object().shape({
+  name: Yup.string()
     .min(4, "Wrong Fullname. Too short")
     .max(20, "Wrong Fullname. Too long")
     .matches(/^[a-zA-Z0-9_]*$/, "Wrong Fullname. Only letters")
     .required("Fullname is required"),
-  email: yup.string().email("Wrong Email").required("Email is required"),
-  phone: yup
-    .string()
-    .matches(/^\+380\d{9}$/, "Wrong Phone")
+  email: Yup.string().email("Wrong Email").required("Email is required"),
+  phone: Yup.string()
+    .matches(/^380\d{9}$/, "Wrong Phone")
     .required("Phone is required"),
-  message: yup.string(),
+  message: Yup.string(),
 });
-
-const initialValues = { name: "", email: "", phone: "", message: "" };
 
 export function ContactForm() {
   const handleSubmit = (
@@ -38,11 +42,11 @@ export function ContactForm() {
 
   return (
     <Formik
-      initialValues={initialValues}
       onSubmit={handleSubmit}
+      initialValues={initialValues}
       validationSchema={schema}
     >
-      <Form autoComplete="off">
+      <Form>
         <FormWrap>
           <Label htmlFor="name">
             * Full name:
@@ -52,17 +56,22 @@ export function ContactForm() {
               id="name"
               placeholder="John Rosie"
             />
+            <ErrorElement>
+              <ErrorMessage name="name" />
+            </ErrorElement>
           </Label>
           <Label htmlFor="email">
-            * Email:
+            * E-mail:
             <InputField
               type="text"
               name="email"
               id="email"
               placeholder="johnrosie@gmail.com"
             />
+            <ErrorElement>
+              <ErrorMessage name="email" />
+            </ErrorElement>
           </Label>
-
           <Label htmlFor="phone">
             * Phone:
             <InputField
@@ -71,8 +80,10 @@ export function ContactForm() {
               id="phone"
               placeholder="380961234567"
             />
+            <ErrorElement>
+              <ErrorMessage name="phone" />
+            </ErrorElement>
           </Label>
-
           <Label htmlFor="message">
             Message:
             <InputField
@@ -80,10 +91,14 @@ export function ContactForm() {
               type="text"
               name="message"
               id="message"
-              placeholder="Your message"
               style={{ height: "124px" }}
+              placeholder="Your message...."
             />
+            <ErrorElement>
+              <ErrorMessage name="message" />
+            </ErrorElement>
           </Label>
+
           <BtnWrap>
             <SubmitBtn type="submit">
               Send
