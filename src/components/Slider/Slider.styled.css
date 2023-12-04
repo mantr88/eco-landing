@@ -1,50 +1,100 @@
-/* src/App.css */
-/* body {
-  margin: 0;
+.control-box-wrap {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-} */
+  justify-content: space-between;
+  align-items: end;
 
-.slider-container {
-  position: relative;
+  text-align: justify;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: -1.12px;
+}
+
+.slides-numbers {
+  color: rgba(23, 61, 51, 0.25);
+}
+
+.control-btn-wrap {
+  display: flex;
+  gap: 12px;
+}
+
+.control-btn {
+  display: inline-flex;
+  padding: 15px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid #173d33;
+}
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  /* font-size: 50px; */
+  /* font-weight: 500;
+  height: 300px; */
+  width: 320px;
+  height: 318px;
+  max-height: 100vh;
+  margin-top: 12px;
+}
+
+.slide-thumb-image {
   width: 100%;
-  overflow: hidden;
+  height: 100%;
 }
 
-.slider {
+.slide-image {
+  object-fit: cover;
+}
+
+.case {
+  height: 150px;
+  margin-top: 14px;
+}
+
+.case-location-wrap {
+  position: relative;
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: justify;
+  font-size: 18px;
+  letter-spacing: -0.72px;
 }
 
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+.case-location {
+  max-width: 175px;
 }
 
-.arrow {
+.case-location::after {
+  content: "";
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  background-color: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-  outline: none;
+  top: 87px;
+  left: 12px;
+  width: 296px;
+  height: 1px;
+  background: #97d28b;
 }
 
-.left {
-  left: 10px;
+.case-description-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px;
+
+  text-align: justify;
+  font-size: 12px;
+  letter-spacing: -0.48px;
 }
 
-.right {
-  right: 10px;
+.arrow-right-top:hover path {
+  stroke: #97d28b;
+}
+
+.arrow-right-top:hover rect {
+  fill: #173d33;
 }
