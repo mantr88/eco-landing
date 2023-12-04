@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const MobileMenuContainer = styled.div`
+  height: 100%;
+`;
+
 export const MobileMenuWrap = styled.div`
   position: relative;
   display: flex;
@@ -50,7 +54,7 @@ export const ItemList = styled.li`
 export const NetworkWrap = styled.div`
   display: flex;
   gap: 8px;
-  margin-top: 100%;
+  margin-top: 180%;
   & > div {
     &:hover svg path,
     &:focus svg path {

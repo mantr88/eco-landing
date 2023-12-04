@@ -9,7 +9,7 @@ export const Overlay = styled.div`
   justify-content: center;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 1000;
 
   background: ${(props) => props.theme.colors.mobile_menu_overlay_bg};
 
@@ -19,11 +19,12 @@ export const Overlay = styled.div`
 export const Content = styled.div`
   position: absolute;
   top: 0;
+  width: 320px;
+  height: 92vh;
   margin-top: 36px;
+  margin-bottom: 36px;
   padding: 24px;
   border-radius: 25px;
   background-color: ${(props) => props.theme.colors.mobile_menu_bg};
   backdrop-filter: blur(12.5px);
-  width: 320px;
-  height: 568px;
 `;

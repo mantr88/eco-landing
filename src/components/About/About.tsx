@@ -14,7 +14,7 @@ import {
 
 export function About() {
   return (
-    <AboutSection>
+    <AboutSection id="about-section">
       <AdressBlock>
         <a href="https://maps.app.goo.gl/2WzseMV8Ymfioi3p7">
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7

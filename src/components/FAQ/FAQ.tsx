@@ -29,7 +29,7 @@ const faqList = [
 
 export function FAQ() {
   return (
-    <FAQSection>
+    <FAQSection id="faq-section">
       <SectionTitle>Frequently Asked Questions</SectionTitle>
       <QuestionTab faqList={faqList} />
       <ContactLink onClick={() => scrolledTo("contact-us-section")}>
