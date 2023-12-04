@@ -25,6 +25,6 @@ export const AboutText = styled.p`
 export const ValuesContainer = styled.ul`
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(2, 148px);
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 36px;
 `;

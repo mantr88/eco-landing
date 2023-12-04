@@ -3,10 +3,11 @@ import { Burger } from "../../ui/svgElements/Burger";
 import { Logo } from "../../ui/svgElements/Logo";
 import {
   AccentText,
-  BurgerWrap,
   CompanyTitle,
+  HeaderContainer,
   HeaderWrap,
   Tagline,
+  BurgerWrap,
 } from "./Header.styled";
 import PopupWindow from "../../ui/PopupWindow/PopupWindow";
 import { BurgerMenu } from "../../components/BurgerMenu/BurgerMenu";
@@ -36,20 +37,24 @@ export function Header() {
   };
   return (
     <HeaderWrap>
-      <Logo />
-      <CompanyTitle scrolling={scrolling}>ecosolution</CompanyTitle>
-      <Tagline>
-        <AccentText>GREEN</AccentText>ERGY
-        <br /> FOR LIFE
-      </Tagline>
-      <BurgerWrap onClick={() => setActive(true)}>
-        <Burger />
-      </BurgerWrap>
-      {active && (
-        <PopupWindow setActive={setActive} active={active}>
-          <BurgerMenu closeModal={onClose} />
-        </PopupWindow>
-      )}
+      <HeaderContainer>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <Logo />
+          <CompanyTitle scrolling={scrolling}>ecosolution</CompanyTitle>
+          <Tagline>
+            <AccentText>GREEN</AccentText>ERGY
+            <br /> FOR LIFE
+          </Tagline>
+        </div>
+        <BurgerWrap onClick={() => setActive(true)}>
+          <Burger />
+        </BurgerWrap>
+        {active && (
+          <PopupWindow setActive={setActive} active={active}>
+            <BurgerMenu closeModal={onClose} />
+          </PopupWindow>
+        )}
+      </HeaderContainer>
     </HeaderWrap>
   );
 }

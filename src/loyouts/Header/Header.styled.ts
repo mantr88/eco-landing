@@ -6,15 +6,24 @@ interface ScrollingProps {
 
 export const HeaderWrap = styled.header`
   position: fixed;
+  top: 0;
   width: 100%;
-  display: flex;
-  align-items: center;
+  max-width: 479px;
+  min-width: 360px;
   margin: 0;
   padding-top: 36px;
-  top: 0;
-  min-width: 360px;
   background-color: ${(props) => props.theme.colors.main_bg};
   z-index: 999;
+`;
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 479px;
+  width: 100%; /* Ensure it takes up the full width */
+  padding: 0 16px; /* Add padding to the sides as needed */
+  box-sizing: border-box; /* Include padding in the total width */
 `;
 
 export const CompanyTitle = styled.p<ScrollingProps>`
@@ -46,7 +55,7 @@ export const AccentText = styled.span`
 `;
 
 export const BurgerWrap = styled.div`
-  margin-left: 11px;
+  margin-left: auto;
   display: flex;
   justify-content: center;
   align-items: center;

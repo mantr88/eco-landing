@@ -27,12 +27,14 @@ function QuestionTab({ faqList }: Props) {
         return (
           <li key={id} className="accordion-item">
             <div className="accordion-header-wrap">
-              {id === openId ? <Minus /> : <Plus />}
               <button
                 className="accordion-header"
                 onClick={() => clickHandler(id)}
               >
-                {faqItem.q}
+                <div className="accordion-header-title">
+                  {id === openId ? <Minus /> : <Plus />}
+                  <p>{faqItem.q}</p>
+                </div>
               </button>
             </div>
             <div
