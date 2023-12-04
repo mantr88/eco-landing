@@ -25,6 +25,14 @@ export const LinkToTop = styled.a`
 
   border-radius: 100px;
   background: ${(props) => props.theme.colors.accent};
+
+  &:hover {
+    background: ${(props) => props.theme.colors.main_text};
+  }
+
+  &:hover path {
+    stroke: ${(props) => props.theme.colors.accent};
+  }
 `;
 
 export const FooterSocialLinksWrap = styled.div`

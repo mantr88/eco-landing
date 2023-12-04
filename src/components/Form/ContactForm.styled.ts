@@ -48,5 +48,11 @@ export const SubmitBtn = styled.button`
   padding: 4px 4px 4px 16px;
   gap: 12px;
   border-radius: 500px;
-  border: 1px solid #97d28b;
+  border: 1px solid ${(props) => props.theme.colors.accent};
+
+  &:hover {
+    border-color: ${(props) => props.theme.colors.main_text};
+    background: ${(props) => props.theme.colors.main_text};
+    color: ${(props) => props.theme.colors.accent};
+  }
 `;

@@ -16,4 +16,13 @@ export const ContactLink = styled.a`
 
   border-radius: 500px;
   background: ${(props) => props.theme.colors.accent};
+
+  &:hover {
+    background: ${(props) => props.theme.colors.main_text};
+    color: ${(props) => props.theme.colors.accent};
+  }
+
+  &:hover circle {
+    fill: ${(props) => props.theme.colors.accent};
+  }
 `;

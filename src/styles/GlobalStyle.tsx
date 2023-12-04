@@ -16,9 +16,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-scroll-behavior: smooth;
+
   background-color:${(props) => props.theme.colors.main_bg};
 }
+html{scroll-behavior: smooth;}
 
 html,
 body,

@@ -1,3 +1,4 @@
+import { scrolledTo } from "../../helpers/scroledTo";
 import { ArrowRight } from "../../ui/svgElements/ArrowRight";
 import { FacebookDark } from "../../ui/svgElements/FacebookDark";
 import { InstagramDark } from "../../ui/svgElements/InstagramDark";
@@ -15,14 +16,13 @@ export function Footer() {
   return (
     <FooterWrap>
       <FirstLineWrap>
-        {" "}
         <Logo />
         <CompanyTitle>ecosolution</CompanyTitle>
         <Tagline>
           <AccentText>GREEN</AccentText>ERGY
           <br /> FOR LIFE
         </Tagline>
-        <LinkToTop href="#">
+        <LinkToTop href="#" onClick={() => scrolledTo("banner-section")}>
           <ArrowRight />
         </LinkToTop>
       </FirstLineWrap>

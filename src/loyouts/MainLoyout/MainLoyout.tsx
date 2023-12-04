@@ -11,7 +11,7 @@ export function MainLoyout({ children }: Props) {
   return (
     <Container>
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
       <GlobalStyle />
     </Container>

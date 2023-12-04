@@ -49,6 +49,12 @@ export const BannerLink = styled.a`
 
   border-radius: 500px;
   border: 1px solid ${(props) => props.theme.colors.accent};
+
+  &:hover {
+    border-color: ${(props) => props.theme.colors.main_text};
+    background-color: ${(props) => props.theme.colors.main_text};
+    color: ${(props) => props.theme.colors.accent};
+  }
 `;
 
 export const ArrowWrap = styled.div`

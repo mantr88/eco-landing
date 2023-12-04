@@ -1,6 +1,9 @@
+import "../../components/Slider/Slider.styled.css";
+
 export function ArrowSliderLeft() {
   return (
     <svg
+      className="arrow-slider"
       width="36"
       height="36"
       viewBox="0 0 36 36"

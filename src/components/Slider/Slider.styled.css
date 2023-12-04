@@ -1,4 +1,5 @@
 .control-box-wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -18,6 +19,16 @@
   gap: 12px;
 }
 
+.control-btn-wrap:after {
+  content: "";
+  position: absolute;
+  top: 368px;
+  left: 0px;
+  width: 296px;
+  height: 1px;
+  background: #97d28b;
+}
+
 .control-btn {
   display: inline-flex;
   padding: 15px;
@@ -25,6 +36,14 @@
   gap: 10px;
   border-radius: 100px;
   border: 1px solid #173d33;
+}
+
+.control-btn:hover {
+  border-color: #97d28b;
+}
+
+.control-btn:hover .arrow-slider path {
+  stroke: #97d28b;
 }
 
 [class^="number-slide"],
@@ -71,7 +90,7 @@
   max-width: 175px;
 }
 
-.case-location::after {
+/* .case-location::after {
   content: "";
   position: absolute;
   top: 87px;
@@ -79,7 +98,7 @@
   width: 296px;
   height: 1px;
   background: #97d28b;
-}
+} */
 
 .case-description-wrap {
   display: flex;

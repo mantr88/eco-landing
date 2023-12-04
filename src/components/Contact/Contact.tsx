@@ -10,12 +10,13 @@ import {
   AdressItemLink,
   AdressItemWrap,
   ContactSection,
+  SocialLink,
   SocialWrap,
 } from "./Contact.styled";
 
 export function Contact() {
   return (
-    <ContactSection>
+    <ContactSection id="contact-us-section">
       <SectionTitle>Contact us</SectionTitle>
       <AdressBlockWrap>
         <AdressBlockTitle>Phone:</AdressBlockTitle>
@@ -53,12 +54,12 @@ export function Contact() {
       <AdressBlockWrap>
         <AdressBlockTitle>Social Networks:</AdressBlockTitle>
         <SocialWrap>
-          <a href="#">
+          <SocialLink href="#">
             <FacebookDark />
-          </a>
-          <a href="#">
+          </SocialLink>
+          <SocialLink href="#">
             <InstagramDark />
-          </a>
+          </SocialLink>
         </SocialWrap>
       </AdressBlockWrap>
     </ContactSection>

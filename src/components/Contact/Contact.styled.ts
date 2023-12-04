@@ -26,6 +26,9 @@ export const AdressItemWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
+  &:hover path {
+    stroke: #97d28b;
+  }
 `;
 
 export const AdressItemLink = styled.a`
@@ -38,4 +41,10 @@ export const SocialWrap = styled.div`
   display: flex;
   gap: 36px;
   margin-top: 20px;
+`;
+
+export const SocialLink = styled.a`
+  &:hover path {
+    stroke: #97d28b;
+  }
 `;

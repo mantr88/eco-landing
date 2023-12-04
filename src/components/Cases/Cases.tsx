@@ -5,7 +5,7 @@ import { CasesSection } from "./Cases.styled";
 export function Cases() {
   return (
     <>
-      <CasesSection>
+      <CasesSection id="cases-section">
         <SectionTitle>Successful cases of our company</SectionTitle>
         <Slider></Slider>
       </CasesSection>
