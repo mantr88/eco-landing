@@ -1,8 +1,8 @@
 import QuestionTab from "../QuestionTab/QuestionTab";
 import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
-import { Dot } from "../../ui/svgElements/Dot";
-import { ContactLink, FAQSection } from "./FAQ.styled";
+import { FAQSection } from "./FAQ.styled";
 import { scrolledTo } from "../../helpers/scroledTo";
+import { Link } from "../../ui/Link/Link";
 
 const faqList = [
   {
@@ -32,9 +32,7 @@ export function FAQ() {
     <FAQSection id="faq-section">
       <SectionTitle>Frequently Asked Questions</SectionTitle>
       <QuestionTab faqList={faqList} />
-      <ContactLink onClick={() => scrolledTo("contact-us-section")}>
-        Contact Us <Dot />
-      </ContactLink>
+      <Link onClick={() => scrolledTo("contact-us-section")}>Contact Us</Link>
     </FAQSection>
   );
 }

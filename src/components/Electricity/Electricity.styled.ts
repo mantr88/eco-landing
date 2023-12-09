@@ -9,8 +9,9 @@ export const Rectangle = styled.div`
     content: "";
 
     position: absolute;
-    top: 92px;
+    top: 35%;
     left: 50%;
+    transform: translateX(-50%);
     width: 1px;
     height: 48px;
 
