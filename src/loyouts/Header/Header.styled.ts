@@ -27,22 +27,18 @@ export const WrapTitle = styled.div`
 
 export const CompanyTitle = styled.div<ScrollingProps>`
   path {
+    transition: fill 0.4s;
     fill: ${(props) =>
       props.scrolling
         ? props.theme.colors.accent
         : props.theme.colors.main_text};
   }
 
-  transition: color 0.4s;
   &:hover {
     path {
       fill: ${(props) => props.theme.colors.accent};
     }
   }
-`;
-
-export const AccentText = styled.span`
-  color: ${(props) => props.theme.colors.accent};
 `;
 
 export const BurgerBtn = styled.div`

@@ -47,7 +47,9 @@ export function Header() {
         <WrapTitle>
           <Logo />
           <CompanyTitle scrolling={scrolling ? true : false}>
-            <Ecosolution />
+            <a href="#">
+              <Ecosolution />
+            </a>
           </CompanyTitle>
           <Tagline />
         </WrapTitle>

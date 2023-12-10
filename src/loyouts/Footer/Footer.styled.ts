@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const FooterWrap = styled.footer`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 61px;
 
   letter-spacing: -0.64px;
 `;
@@ -11,6 +13,29 @@ export const FooterWrap = styled.footer`
 export const FirstLineWrap = styled.div`
   display: flex;
   align-items: center;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -24px;
+    width: 320px;
+    height: 1px;
+
+    border-radius: 100%;
+    background: ${(props) => props.theme.colors.accent};
+  }
+`;
+
+export const LinkTitle = styled.a`
+  display: block;
+  &:hover {
+    path {
+      transition: fill 0.4s;
+      fill: ${(props) => props.theme.colors.accent};
+    }
+  }
 `;
 
 export const LinkToTop = styled.a`

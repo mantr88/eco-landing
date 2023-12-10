@@ -1,14 +1,17 @@
 import { scrolledTo } from "../../helpers/scroledTo";
 import { ArrowRight } from "../../ui/svgElements/ArrowRight";
+import { Ecosolution } from "../../ui/svgElements/Ecosolution";
 import { FacebookDark } from "../../ui/svgElements/FacebookDark";
 import { InstagramDark } from "../../ui/svgElements/InstagramDark";
 import { Logo } from "../../ui/svgElements/Logo";
-import { AccentText, CompanyTitle, Tagline } from "../Header/Header.styled";
+import { Tagline } from "../../ui/svgElements/Tagline";
+import { WrapTitle } from "../Header/Header.styled";
 import {
   FirstLineWrap,
   FooterContactsWrap,
   FooterSocialLinksWrap,
   FooterWrap,
+  LinkTitle,
   LinkToTop,
 } from "./Footer.styled";
 
@@ -16,12 +19,13 @@ export function Footer() {
   return (
     <FooterWrap>
       <FirstLineWrap>
-        <Logo />
-        <CompanyTitle>ecosolution</CompanyTitle>
-        <Tagline>
-          <AccentText>GREEN</AccentText>ERGY
-          <br /> FOR LIFE
-        </Tagline>
+        <WrapTitle>
+          <Logo />
+          <LinkTitle href="#">
+            <Ecosolution />
+          </LinkTitle>
+          <Tagline />
+        </WrapTitle>
         <LinkToTop href="#" onClick={() => scrolledTo("banner-section")}>
           <ArrowRight />
         </LinkToTop>
