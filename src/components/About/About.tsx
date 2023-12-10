@@ -1,9 +1,5 @@
 import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
 import { Values } from "../Values/Values";
-import { CpuCharge } from "../../ui/svgElements/CpuCharge";
-import { GlobalEdit } from "../../ui/svgElements/GlobalEdit";
-import { MaximizeCircle } from "../../ui/svgElements/MaximizeCircle";
-import { Ranking } from "../../ui/svgElements/Ranking";
 import {
   AboutSection,
   AboutText,
@@ -11,10 +7,6 @@ import {
   CopyrightText,
   ImageThumb,
   TitleValuesWrap,
-  Values1,
-  Values2,
-  Values5,
-  ValuesContainer,
 } from "./About.styled";
 
 export function About() {
