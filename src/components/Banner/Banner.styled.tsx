@@ -19,6 +19,28 @@ export const BannerSection = styled.section`
     border-radius: 100%;
     background: #97d28b;
   }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    display: flex;
+    gap: 65px;
+
+    &::after {
+      width: 708px;
+    }
+  }
+`;
+
+export const WrapText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    display: flex;
+    gap: 43px;
+  }
 `;
 
 export const BannerTitle = styled.h2`
@@ -31,7 +53,6 @@ export const BannerTitle = styled.h2`
 
 export const BannerText = styled.p`
   text-align: justify;
-  font-family: "Fira Sans";
   letter-spacing: -0.64px;
 `;
 
@@ -42,7 +63,7 @@ export const BannerLink = styled.a`
   gap: 12px;
   height: 39px;
   padding: 4px 4px 4px 16px;
-  margin-left: 33%;
+  margin-bottom: 24px;
 
   color: ${(props) => props.theme.colors.main_text};
   line-height: 1.12;
@@ -55,6 +76,10 @@ export const BannerLink = styled.a`
     border-color: ${(props) => props.theme.colors.main_text};
     background-color: ${(props) => props.theme.colors.main_text};
     color: ${(props) => props.theme.colors.accent};
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    margin-bottom: 0;
   }
 `;
 

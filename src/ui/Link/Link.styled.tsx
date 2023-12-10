@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const LinkStyled = styled.a`
-  margin-left: 33%;
-  display: inline-flex;
   padding: 10px 16px;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 12px;

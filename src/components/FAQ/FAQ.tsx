@@ -1,6 +1,6 @@
 import QuestionTab from "../QuestionTab/QuestionTab";
 import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
-import { FAQSection } from "./FAQ.styled";
+import { FAQSection, LinkWrap } from "./FAQ.styled";
 import { scrolledTo } from "../../helpers/scroledTo";
 import { Link } from "../../ui/Link/Link";
 
@@ -32,7 +32,9 @@ export function FAQ() {
     <FAQSection id="faq-section">
       <SectionTitle>Frequently Asked Questions</SectionTitle>
       <QuestionTab faqList={faqList} />
-      <Link onClick={() => scrolledTo("contact-us-section")}>Contact Us</Link>
+      <LinkWrap>
+        <Link onClick={() => scrolledTo("contact-us-section")}>Contact Us</Link>
+      </LinkWrap>
     </FAQSection>
   );
 }

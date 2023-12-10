@@ -10,6 +10,7 @@ export const HeaderWrap = styled.header`
   width: 100%;
   margin: 0;
   padding-top: 36px;
+  padding-bottom: 16px;
   background-color: ${(props) => props.theme.colors.main_bg};
   z-index: 999;
 `;
@@ -53,5 +54,39 @@ export const BurgerBtn = styled.div`
 
   &:hover {
     background: ${(props) => props.theme.colors.accent};
+  }
+`;
+
+export const Nav = styled.div`
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+`;
+
+export const HeaderLink = styled.a`
+  display: none;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    padding: 10px 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    letter-spacing: -0.64px;
+
+    border-radius: 500px;
+    background: ${(props) => props.theme.colors.accent};
+
+    &:hover {
+      background: ${(props) => props.theme.colors.main_text};
+      color: ${(props) => props.theme.colors.accent};
+    }
+
+    &:hover circle {
+      fill: ${(props) => props.theme.colors.accent};
+    }
   }
 `;

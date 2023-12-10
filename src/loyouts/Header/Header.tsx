@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Burger } from "../../ui/svgElements/Burger";
 import { Logo } from "../../ui/svgElements/Logo";
 import {
-  AccentText,
   CompanyTitle,
   HeaderContainer,
   HeaderWrap,
@@ -59,15 +58,15 @@ export function Header() {
             <Burger />
           </div>
         </Wrap> */}
-        {/* <Nav> */}
-        <BurgerBtn onClick={() => setActive(true)}>
-          <Burger />
-        </BurgerBtn>
-        {/* <HeaderLink onClick={() => scrolledTo("contact-us-section")}>
+        <Nav>
+          <BurgerBtn onClick={() => setActive(true)}>
+            <Burger />
+          </BurgerBtn>
+          <HeaderLink onClick={() => scrolledTo("contact-us-section")}>
             Get in touch
             <Dot />
-          </HeaderLink> */}
-        {/* </Nav> */}
+          </HeaderLink>
+        </Nav>
 
         {active && (
           <PopupWindow setActive={setActive} active={active}>
