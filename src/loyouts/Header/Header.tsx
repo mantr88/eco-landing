@@ -6,11 +6,17 @@ import {
   CompanyTitle,
   HeaderContainer,
   HeaderWrap,
-  Tagline,
-  BurgerWrap,
+  WrapTitle,
+  HeaderLink,
+  Nav,
+  BurgerBtn,
 } from "./Header.styled";
 import PopupWindow from "../../ui/PopupWindow/PopupWindow";
 import { BurgerMenu } from "../../components/BurgerMenu/BurgerMenu";
+import { scrolledTo } from "../../helpers/scroledTo";
+import { Dot } from "../../ui/svgElements/Dot";
+import { Ecosolution } from "../../ui/svgElements/Ecosolution";
+import { Tagline } from "../../ui/svgElements/Tagline";
 
 export function Header() {
   const [active, setActive] = useState(false);
@@ -38,17 +44,29 @@ export function Header() {
   return (
     <HeaderWrap>
       <HeaderContainer>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <WrapTitle>
           <Logo />
-          <CompanyTitle scrolling={scrolling}>ecosolution</CompanyTitle>
-          <Tagline>
-            <AccentText>GREEN</AccentText>ERGY
-            <br /> FOR LIFE
-          </Tagline>
-        </div>
-        <BurgerWrap onClick={() => setActive(true)}>
+          <CompanyTitle scrolling={scrolling ? true : false}>
+            <Ecosolution />
+          </CompanyTitle>
+          <Tagline />
+        </WrapTitle>
+        {/* <Wrap>
+          <a>Get in touch</a>
+          <div>
+            <Burger />
+          </div>
+        </Wrap> */}
+        {/* <Nav> */}
+        <BurgerBtn onClick={() => setActive(true)}>
           <Burger />
-        </BurgerWrap>
+        </BurgerBtn>
+        {/* <HeaderLink onClick={() => scrolledTo("contact-us-section")}>
+            Get in touch
+            <Dot />
+          </HeaderLink> */}
+        {/* </Nav> */}
+
         {active && (
           <PopupWindow setActive={setActive} active={active}>
             <BurgerMenu closeModal={onClose} />
