@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./QuestionTab.styled.css";
 import { Minus } from "../../ui/svgElements/Minus";
 import { Plus } from "../../ui/svgElements/Plus";
@@ -14,11 +14,16 @@ type Props = {
 type Handler = (id: number) => void;
 
 function QuestionTab({ faqList }: Props) {
-  const itemRef = useRef(0);
+  const itemRefs = useRef<Array<React.RefObject<HTMLDivElement>>>([]);
   const [openId, setOpenId] = useState<number | null>(0);
 
+  useEffect(() => {
+    // Initialize itemRefs with refs for each FAQ item
+    itemRefs.current = faqList.map(() => React.createRef<HTMLDivElement>());
+  }, [faqList]);
+
   const clickHandler: Handler = (id) => {
-    id === openId ? setOpenId(null) : setOpenId(id);
+    setOpenId((prevId) => (id === prevId ? null : id));
   };
 
   return (
@@ -39,13 +44,14 @@ function QuestionTab({ faqList }: Props) {
             </div>
             <div
               className={`accordion-collapse ${id === openId ? "open" : ""}`}
-              style={
-                id === openId
-                  ? { height: itemRef.current.scrollHeight }
-                  : { height: "0px" }
-              }
+              style={{
+                height:
+                  id === openId
+                    ? itemRefs.current[id]?.current?.scrollHeight
+                    : 0,
+              }}
             >
-              <div className="accordion-body" ref={itemRef}>
+              <div className="accordion-body" ref={itemRefs.current[id]}>
                 {faqItem.a}
               </div>
             </div>
