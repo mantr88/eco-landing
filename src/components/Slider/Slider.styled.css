@@ -54,6 +54,11 @@
   min-height: 318px;
   max-height: 100vh;
   margin-top: 12px;
+
+  @media screen and (min-width: 768px) {
+    width: 342px;
+    min-height: 322px;
+  }
 }
 
 .slide-thumb-image {
@@ -79,10 +84,19 @@
   text-align: justify;
   font-size: 18px;
   letter-spacing: -0.72px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .case-location {
   max-width: 175px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 194px;
+    letter-spacing: -0.8px;
+  }
 }
 
 .case-description-wrap {
@@ -94,6 +108,11 @@
   text-align: justify;
   font-size: 12px;
   letter-spacing: -0.48px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    letter-spacing: -0.56px;
+  }
 }
 
 .case-description-wrap::before {

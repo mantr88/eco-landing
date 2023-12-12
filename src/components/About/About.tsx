@@ -23,7 +23,7 @@ export function About() {
         <img
           srcSet="./assets/image/wind-turbine-clean-energy-320.jpg 320w, ./assets/image/wind-turbine-clean-energy-640.jpg 640w, ./assets/image/wind-turbine-clean-energy-960.jpg 960w"
           src="./assets/image/wind-turbine-clean-energy-320.jpg"
-          sizes="(min-width: 768px) 50vw, 100vw"
+          sizes="(max-width: 767px) 50vw, 100vw"
           alt="wind turbine"
         />
       </ImageThumb>
