@@ -8,4 +8,8 @@ export const Title = styled.h2`
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    font-size: 36px;
+  }
 `;
