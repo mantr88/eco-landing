@@ -1,6 +1,6 @@
 import QuestionTab from "../QuestionTab/QuestionTab";
 import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
-import { FAQSection, LinkWrap } from "./FAQ.styled";
+import { FAQSection, LinkWrap, Question } from "./FAQ.styled";
 import { scrolledTo } from "../../helpers/scroledTo";
 import { Link } from "../../ui/Link/Link";
 
@@ -14,16 +14,16 @@ const faqList = [
     a: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum laudantium reiciendis eaque expedita mollitia vel beatae perspiciatis ab tenetur?",
   },
   {
+    q: "How can businesses and communities benefit from integrating renewable energy solutions from EcoSolution?",
+    a: "5Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum laudantium reiciendis eaque expedita mollitia vel beatae perspiciatis ab tenetur?",
+  },
+  {
     q: "What measures does EcoSolution take to ensure the environmental sustainability of its products?",
     a: "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum laudantium reiciendis eaque expedita mollitia vel beatae perspiciatis ab tenetur?",
   },
   {
     q: "How does EcoSolution engage with local communities and support a just transition to renewable energy?",
     a: "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum laudantium reiciendis eaque expedita mollitia vel beatae perspiciatis ab tenetur?",
-  },
-  {
-    q: "Didn't find the answer to your question?",
-    a: "5Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum laudantium reiciendis eaque expedita mollitia vel beatae perspiciatis ab tenetur?",
   },
 ];
 
@@ -32,7 +32,9 @@ export function FAQ() {
     <FAQSection id="faq-section">
       <SectionTitle>Frequently Asked Questions</SectionTitle>
       <QuestionTab faqList={faqList} />
+
       <LinkWrap>
+        <Question>Didn't find the answer to your question?</Question>
         <Link onClick={() => scrolledTo("contact-us-section")}>Contact Us</Link>
       </LinkWrap>
     </FAQSection>
