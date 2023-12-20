@@ -17,7 +17,7 @@ export const FormWrap = styled.div`
 
   background: ${(props) => props.theme.colors.second_bg};
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.s}) {
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     margin-top: 0;
     min-width: 344px;
   }

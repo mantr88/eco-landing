@@ -1,11 +1,24 @@
 import styled from "styled-components";
 
-export const ContactSection = styled.section`
+export const ContactSectionContainer = styled.div`
   margin-top: 36px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
+
+export const ContactsWrap = styled.div`
+  display: flex;
+  flex-direction: column;
   gap: 24px;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    width: 244px;
+  }
 `;
 
 export const AdressBlockWrap = styled.div`
