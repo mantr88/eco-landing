@@ -16,10 +16,11 @@ export const FormWrap = styled.div`
   letter-spacing: -0.64px;
 
   background: ${(props) => props.theme.colors.second_bg};
-`;
 
-export const Label = styled.label`
-  /* margin-bottom: 8px; */
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.s}) {
+    margin-top: 0;
+    min-width: 344px;
+  }
 `;
 
 export const InputField = styled(Field)`
@@ -36,7 +37,9 @@ export const InputField = styled(Field)`
 
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid ${(props) => props.theme.colors.accent};
+  border-bottom: 1px solid
+    ${(props) =>
+      props.border ? props.theme.colors.error_text : props.theme.colors.accent};
 `;
 
 export const ErrorElement = styled.div`

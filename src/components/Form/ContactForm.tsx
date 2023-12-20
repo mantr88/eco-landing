@@ -5,7 +5,6 @@ import {
   ErrorElement,
   FormWrap,
   InputField,
-  Label,
   SubmitBtn,
 } from "./ContactForm.styled";
 import { ArrowWrap } from "../Banner/Banner.styled";
@@ -46,69 +45,74 @@ export function ContactForm() {
       initialValues={initialValues}
       validationSchema={schema}
     >
-      <Form>
-        <FormWrap>
-          <Label htmlFor="name">
-            * Full name:
-            <InputField
-              type="text"
-              name="name"
-              id="name"
-              placeholder="John Rosie"
-            />
-            <ErrorElement>
-              <ErrorMessage name="name" />
-            </ErrorElement>
-          </Label>
-          <Label htmlFor="email">
-            * E-mail:
-            <InputField
-              type="text"
-              name="email"
-              id="email"
-              placeholder="johnrosie@gmail.com"
-            />
-            <ErrorElement>
-              <ErrorMessage name="email" />
-            </ErrorElement>
-          </Label>
-          <Label htmlFor="phone">
-            * Phone:
-            <InputField
-              type="text"
-              name="phone"
-              id="phone"
-              placeholder="380961234567"
-            />
-            <ErrorElement>
-              <ErrorMessage name="phone" />
-            </ErrorElement>
-          </Label>
-          <Label htmlFor="message">
-            Message:
-            <InputField
-              as={"textarea"}
-              type="text"
-              name="message"
-              id="message"
-              style={{ height: "124px" }}
-              placeholder="Your message...."
-            />
-            <ErrorElement>
-              <ErrorMessage name="message" />
-            </ErrorElement>
-          </Label>
+      {(props) => (
+        <Form>
+          <FormWrap>
+            <label htmlFor="name">
+              * Full name:
+              <InputField
+                type="text"
+                name="name"
+                id="name"
+                placeholder="John Rosie"
+                border={props.errors.name}
+              />
+              <ErrorElement>
+                <ErrorMessage name="name" />
+              </ErrorElement>
+            </label>
+            <label htmlFor="email">
+              * E-mail:
+              <InputField
+                type="text"
+                name="email"
+                id="email"
+                placeholder="johnrosie@gmail.com"
+                border={props.errors.email}
+              />
+              <ErrorElement>
+                <ErrorMessage name="email" />
+              </ErrorElement>
+            </label>
+            <label htmlFor="phone">
+              * Phone:
+              <InputField
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="380961234567"
+                border={props.errors.phone}
+              />
+              <ErrorElement>
+                <ErrorMessage name="phone" />
+              </ErrorElement>
+            </label>
+            <label htmlFor="message">
+              Message:
+              <InputField
+                as={"textarea"}
+                type="text"
+                name="message"
+                id="message"
+                style={{ height: "124px" }}
+                placeholder="Your message...."
+              />
+              <ErrorElement>
+                <ErrorMessage name="message" />
+              </ErrorElement>
+            </label>
 
-          <BtnWrap>
-            <SubmitBtn type="submit">
-              Send
-              <ArrowWrap>
-                <ArrowRight />
-              </ArrowWrap>
-            </SubmitBtn>
-          </BtnWrap>
-        </FormWrap>
-      </Form>
+            <BtnWrap>
+              <SubmitBtn type="submit">
+                Send
+                <ArrowWrap>
+                  <ArrowRight />
+                </ArrowWrap>
+              </SubmitBtn>
+            </BtnWrap>
+          </FormWrap>
+        </Form>
+      )}
     </Formik>
   );
 }
