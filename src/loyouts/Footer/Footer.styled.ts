@@ -8,11 +8,23 @@ export const FooterWrap = styled.footer`
   margin-top: 61px;
 
   letter-spacing: -0.64px;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+  }
 `;
 
 export const FirstLineWrap = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    flex: 100%;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
 
   &::before {
     content: " ";
@@ -25,6 +37,10 @@ export const FirstLineWrap = styled.div`
 
     border-radius: 100%;
     background: ${(props) => props.theme.colors.accent};
+
+    @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+      width: 708px;
+    }
   }
 `;
 
@@ -65,6 +81,10 @@ export const FooterSocialLinksWrap = styled.div`
   gap: 8px;
   margin-bottom: 24px;
   margin-top: 24px;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    display: none;
+  }
 `;
 
 export const FooterContactsWrap = styled.div`
@@ -72,4 +92,10 @@ export const FooterContactsWrap = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 16px;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    flex-direction: row;
+    gap: 70px;
+    margin-bottom: 40px;
+  }
 `;
