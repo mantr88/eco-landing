@@ -13,6 +13,8 @@ export const Container = styled.div`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {

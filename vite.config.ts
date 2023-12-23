@@ -5,4 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/eco-landing/",
+  server: {
+    host: "127.0.0.1",
+  },
 });

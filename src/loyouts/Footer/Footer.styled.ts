@@ -22,7 +22,7 @@ export const FirstLineWrap = styled.div`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     flex: 100%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-bottom: 16px;
   }
 
@@ -67,6 +67,10 @@ export const LinkToTop = styled.a`
   border-radius: 100px;
   background: ${(props) => props.theme.colors.accent};
 
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    margin-left: auto;
+  }
+
   &:hover {
     background: ${(props) => props.theme.colors.main_text};
   }
@@ -76,7 +80,7 @@ export const LinkToTop = styled.a`
   }
 `;
 
-export const FooterSocialLinksWrap = styled.div`
+export const FooterSocialLinksMobileWrap = styled.div`
   display: flex;
   gap: 8px;
   margin-bottom: 24px;
@@ -84,6 +88,17 @@ export const FooterSocialLinksWrap = styled.div`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     display: none;
+  }
+`;
+
+export const FooterSocialLinksTableWrap = styled.div`
+  display: none;
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    margin-left: 97px;
   }
 `;
 
@@ -95,7 +110,18 @@ export const FooterContactsWrap = styled.div`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     flex-direction: row;
-    gap: 70px;
     margin-bottom: 40px;
+  }
+`;
+
+export const EmailLink = styled.a`
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    margin-left: 60px;
+  }
+`;
+
+export const Copyright = styled.p`
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    margin-left: 50px;
   }
 `;

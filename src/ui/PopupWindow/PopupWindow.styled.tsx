@@ -20,11 +20,19 @@ export const Content = styled.div`
   position: absolute;
   top: 0;
   width: 320px;
-  height: 92vh;
+  height: 100vh;
   margin-top: 36px;
   margin-bottom: 36px;
   padding: 24px;
   border-radius: 25px;
   background-color: ${(props) => props.theme.colors.mobile_menu_bg};
   backdrop-filter: blur(12.5px);
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.s}) {
+    right: 4%;
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    right: 2.5%;
+  }
 `;

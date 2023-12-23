@@ -7,9 +7,12 @@ import { Logo } from "../../ui/svgElements/Logo";
 import { Tagline } from "../../ui/svgElements/Tagline";
 import { WrapTitle } from "../Header/Header.styled";
 import {
+  Copyright,
+  EmailLink,
   FirstLineWrap,
   FooterContactsWrap,
-  FooterSocialLinksWrap,
+  FooterSocialLinksMobileWrap,
+  FooterSocialLinksTableWrap,
   FooterWrap,
   LinkTitle,
   LinkToTop,
@@ -26,20 +29,26 @@ export function Footer() {
           </LinkTitle>
           <Tagline />
         </WrapTitle>
+        <FooterSocialLinksTableWrap>
+          <FacebookDark />
+          <InstagramDark />
+        </FooterSocialLinksTableWrap>
         <LinkToTop href="#" onClick={() => scrolledTo("banner-section")}>
           <ArrowRight />
         </LinkToTop>
       </FirstLineWrap>
-      <FooterSocialLinksWrap>
+      <FooterSocialLinksMobileWrap>
         <FacebookDark />
         <InstagramDark />
-      </FooterSocialLinksWrap>
+      </FooterSocialLinksMobileWrap>
       <FooterContactsWrap>
         <a href="https://maps.app.goo.gl/2WzseMV8Ymfioi3p7">
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
         </a>
-        <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
-        <p>ecosolution © 2023</p>
+        <EmailLink href="mailto:office@ecosolution.com">
+          office@ecosolution.com
+        </EmailLink>
+        <Copyright>ecosolution © 2023</Copyright>
       </FooterContactsWrap>
     </FooterWrap>
   );
