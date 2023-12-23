@@ -45,10 +45,8 @@ export function Footer() {
         <a href="https://maps.app.goo.gl/2WzseMV8Ymfioi3p7">
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
         </a>
-        <EmailLink href="mailto:office@ecosolution.com">
-          office@ecosolution.com
-        </EmailLink>
-        <Copyright>ecosolution © 2023</Copyright>
+        <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
+        <a>ecosolution © 2023</a>
       </FooterContactsWrap>
     </FooterWrap>
   );

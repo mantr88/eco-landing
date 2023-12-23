@@ -1,4 +1,3 @@
-import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
 import { Slider } from "../Slider/Slider";
 import { CasesSection } from "./Cases.styled";
 

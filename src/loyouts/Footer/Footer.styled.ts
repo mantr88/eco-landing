@@ -98,30 +98,20 @@ export const FooterSocialLinksTableWrap = styled.div`
     gap: 8px;
     margin-bottom: 24px;
     margin-top: 24px;
-    margin-left: 97px;
+    margin-left: 85px;
   }
 `;
 
 export const FooterContactsWrap = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 16px;
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     flex-direction: row;
     margin-bottom: 40px;
-  }
-`;
-
-export const EmailLink = styled.a`
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
-    margin-left: 60px;
-  }
-`;
-
-export const Copyright = styled.p`
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
-    margin-left: 50px;
   }
 `;
