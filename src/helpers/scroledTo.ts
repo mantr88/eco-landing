@@ -1,7 +1,9 @@
 export const scrolledTo = (id: string) => {
-  const bannerSection = document.getElementById(`${id}`);
+  const section = document.getElementById(`${id}`);
 
-  if (bannerSection) {
-    bannerSection.scrollIntoView({ behavior: "smooth" });
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth",
+    });
   }
 };

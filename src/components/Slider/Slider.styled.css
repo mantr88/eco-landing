@@ -1,3 +1,23 @@
+.control-box-and-title-wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+.title {
+  @media screen and (min-width: 768px) {
+    width: 342px;
+    padding-right: 36px;
+  }
+}
+
+.title > h2 {
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 .control-box-wrap {
   position: relative;
   display: flex;
@@ -8,6 +28,22 @@
   font-size: 28px;
   font-weight: 300;
   letter-spacing: -1.12px;
+
+  @media screen and (min-width: 768px) {
+    width: 342px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .control-btn-wrap:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 1px;
+    height: 65px;
+    background: #97d28b;
+  }
 }
 
 .slides-numbers {
@@ -18,16 +54,6 @@
   display: flex;
   gap: 12px;
 }
-
-/* .control-btn-wrap:after {
-  content: "";
-  position: absolute;
-  top: 368px;
-  left: 0px;
-  width: 296px;
-  height: 1px;
-  background: #97d28b;
-} */
 
 .control-btn {
   display: inline-flex;
@@ -58,6 +84,7 @@
   @media screen and (min-width: 768px) {
     width: 342px;
     min-height: 322px;
+    margin-top: 32px;
   }
 }
 

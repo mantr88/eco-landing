@@ -4,6 +4,7 @@ import "keen-slider/keen-slider.min.css";
 import { ArrowRightTop } from "../../ui/svgElements/ArrowRightTop";
 import { ArrowSliderLeft } from "../../ui/svgElements/ArrowSliderLeft";
 import { ArrowSliderRight } from "../../ui/svgElements/ArrowSliderRight";
+import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
 
 export const Slider = () => {
   const [ref, slider] = useKeenSlider<HTMLDivElement>({
@@ -42,18 +43,23 @@ export const Slider = () => {
   };
   return (
     <>
-      <div className="control-box-wrap">
-        <p>
-          0{currentSlide + 1}
-          <span className="slides-numbers">/0{numbersOfSlides}</span>
-        </p>
-        <div className="control-btn-wrap">
-          <button className="control-btn" onClick={handlePrev}>
-            <ArrowSliderLeft />
-          </button>
-          <button className="control-btn" onClick={handleNext}>
-            <ArrowSliderRight />
-          </button>
+      <div className="control-box-and-title-wrap">
+        <div className="title">
+          <SectionTitle>Successful cases of our company</SectionTitle>
+        </div>
+        <div className="control-box-wrap">
+          <p>
+            0{currentSlide + 1}
+            <span className="slides-numbers">/0{numbersOfSlides}</span>
+          </p>
+          <div className="control-btn-wrap">
+            <button className="control-btn" onClick={handlePrev}>
+              <ArrowSliderLeft />
+            </button>
+            <button className="control-btn" onClick={handleNext}>
+              <ArrowSliderRight />
+            </button>
+          </div>
         </div>
       </div>
       <div ref={ref} className="keen-slider">

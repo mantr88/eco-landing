@@ -6,7 +6,6 @@ export function Cases() {
   return (
     <>
       <CasesSection id="cases-section">
-        <SectionTitle>Successful cases of our company</SectionTitle>
         <Slider></Slider>
       </CasesSection>
     </>
