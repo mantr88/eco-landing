@@ -8,6 +8,7 @@ export const ValuesContainer = styled.ul`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px;
   }
 `;
 

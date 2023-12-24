@@ -5,7 +5,6 @@ export const ElectricitySection = styled.section`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     margin-top: 100px;
-    margin-bottom: 100px;
     text-align: center;
   }
 `;

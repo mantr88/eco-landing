@@ -7,8 +7,6 @@ import { Logo } from "../../ui/svgElements/Logo";
 import { Tagline } from "../../ui/svgElements/Tagline";
 import { WrapTitle } from "../Header/Header.styled";
 import {
-  Copyright,
-  EmailLink,
   FirstLineWrap,
   FooterContactsWrap,
   FooterSocialLinksMobileWrap,

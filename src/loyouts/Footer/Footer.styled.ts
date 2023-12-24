@@ -12,7 +12,8 @@ export const FooterWrap = styled.footer`
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+
+    margin-top: 124px;
   }
 `;
 
@@ -22,7 +23,6 @@ export const FirstLineWrap = styled.div`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     flex: 100%;
-    /* justify-content: space-between; */
     margin-bottom: 16px;
   }
 

@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const ContactSection = styled.section`
+  text-align: "center";
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    margin-top: 100px;
+  }
+`;
 export const ContactSectionContainer = styled.div`
   margin-top: 36px;
   display: flex;

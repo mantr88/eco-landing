@@ -10,6 +10,7 @@ export const FAQSection = styled.section`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: 24px;
+    margin-top: 100px;
   }
 `;
 
@@ -20,7 +21,7 @@ export const LinkWrap = styled.div`
     grid-column-end: 3;
     grid-row-end: 2;
     position: absolute;
-    top: 610px;
+    top: 625px;
     left: 376px;
     transform: translateX(0%);
   }

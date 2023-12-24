@@ -76,7 +76,8 @@ export const Slider = () => {
           <div className="case">
             <div className="case-location-wrap">
               <p className="case-location">
-                Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”
+                Lviv Region, Radekhiv <br />
+                town Private Enterprise “ZAKHIDNYI BUH”
               </p>
               <a href="#">
                 <ArrowRightTop />
@@ -103,7 +104,8 @@ export const Slider = () => {
           <div className="case">
             <div className="case-location-wrap">
               <p className="case-location">
-                Zhytomyr city Private Enterprise “Bosch”
+                Zhytomyr city <br />
+                Private Enterprise “Bosch”
               </p>
               <a href="#">
                 <ArrowRightTop />
@@ -130,7 +132,8 @@ export const Slider = () => {
           <div className="case">
             <div className="case-location-wrap">
               <p className="case-location">
-                Rivne city Private Enterprise “Biotech”
+                Rivne city <br />
+                Private Enterprise “Biotech”
               </p>
               <a href="#">
                 <ArrowRightTop />
@@ -155,7 +158,8 @@ export const Slider = () => {
           <div className="case">
             <div className="case-location-wrap">
               <p className="case-location">
-                Kherson city Private Enterprise “HealthyFarm”
+                Kherson city <br />
+                Private Enterprise “HealthyFarm”
               </p>
               <a href="#">
                 <ArrowRightTop />
@@ -179,7 +183,8 @@ export const Slider = () => {
           <div className="case">
             <div className="case-location-wrap">
               <p className="case-location">
-                Zaporizhia city Private Enterprise “Biotech”
+                Zaporizhia city <br />
+                Private Enterprise “Biotech”
               </p>
               <a href="#">
                 <ArrowRightTop />

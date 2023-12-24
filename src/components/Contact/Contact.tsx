@@ -10,6 +10,7 @@ import {
   AdressBlockWrap,
   AdressItemLink,
   AdressItemWrap,
+  ContactSection,
   ContactSectionContainer,
   ContactsWrap,
   SocialLink,
@@ -18,7 +19,7 @@ import {
 
 export function Contact() {
   return (
-    <section id="contact-us-section" style={{ textAlign: "center" }}>
+    <ContactSection id="contact-us-section" style={{ textAlign: "center" }}>
       <SectionTitle>Contact us</SectionTitle>
       <ContactSectionContainer>
         <ContactsWrap>
@@ -69,6 +70,6 @@ export function Contact() {
         </ContactsWrap>
         <ContactForm />
       </ContactSectionContainer>
-    </section>
+    </ContactSection>
   );
 }
