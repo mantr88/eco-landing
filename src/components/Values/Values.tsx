@@ -37,13 +37,15 @@ export function Values() {
       </Values2>
       <Values3>
         <img
-          src="./assets/image/wind-farms-fields 1.jpg"
+          srcSet="./assets/image/wind-farms-fields-342.jpg 342w, ./assets/image/wind-farms-fields-684.jpg 684w, ./assets/image/wind-farms-fields-1026.jpg 1026w"
+          src="./assets/image/wind-farms-fields-342.jpg"
           alt="wind farms workers"
         />
       </Values3>
       <Values4>
         <img
-          src="./assets/image/man-worker-firld-by-solar-panels 1.jpg"
+          srcSet="./assets/image/man-worker-firld-by-solar-panels-342.jpg 342w, ./assets/image/man-worker-firld-by-solar-panels-684.jpg 684w, ./assets/image/man-worker-firld-by-solar-panels-1026.jpg 1026w"
+          src="./assets/image/man-worker-firld-by-solar-panels-342.jpg"
           alt="solar farms workers"
         />
       </Values4>

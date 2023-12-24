@@ -1,6 +1,9 @@
+import "../../styles/svgElementStyles.css";
+
 export function GlobalEdit() {
   return (
     <svg
+      className="aboutItemIcon"
       width="16"
       height="16"
       viewBox="0 0 16 16"

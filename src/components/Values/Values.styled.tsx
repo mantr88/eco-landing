@@ -10,16 +10,27 @@ export const ValuesContainer = styled.ul`
     grid-template-columns: repeat(4, 1fr);
     margin-top: 100px;
   }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    gap: 48px;
+  }
 `;
 
 export const ValuesItem = styled.li`
   height: 197px;
-  padding: 13px 12px;
+  padding: 13px 12px 12px 12px;
 
   background: ${(props) => props.theme.colors.second_bg};
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     width: 159px;
+    padding-top: 12px;
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    width: 274px;
+    height: 339px;
+    padding: 48px 24px 48px 24px;
   }
 `;
 
@@ -34,6 +45,10 @@ export const Values3 = styled.div`
     grid-column: span 2;
     width: 342px;
   }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    width: 596px;
+  }
 `;
 export const Values4 = styled.div`
   display: none;
@@ -42,6 +57,10 @@ export const Values4 = styled.div`
     display: block;
     grid-column: span 2;
     width: 342px;
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    width: 596px;
   }
 `;
 
@@ -64,6 +83,14 @@ export const TitleWrap = styled.div`
     height: 1px;
     background: ${(props) => props.theme.colors.accent};
   }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    padding-bottom: 0;
+    &::after {
+      top: 119px;
+      width: 226px;
+    }
+  }
 `;
 
 export const ValuesTitle = styled.h4`
@@ -71,6 +98,10 @@ export const ValuesTitle = styled.h4`
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    font-size: 32px;
+  }
 `;
 
 export const ValuesDesc = styled.p`
@@ -78,4 +109,9 @@ export const ValuesDesc = styled.p`
   text-align: justify;
   font-size: 14px;
   letter-spacing: -0.56px;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    margin-top: 119px;
+    font-size: 16px;
+  }
 `;

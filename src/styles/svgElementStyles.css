@@ -4,3 +4,10 @@
     height: 28px;
   }
 }
+
+.aboutItemIcon {
+  @media screen and (min-width: 1280px) {
+    width: 24px;
+    height: 24px;
+  }
+}

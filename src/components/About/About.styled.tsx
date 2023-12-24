@@ -2,6 +2,14 @@ import styled from "styled-components";
 
 export const AboutSection = styled.section`
   margin-top: 24px;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    margin-top: 36px;
+  }
 `;
 
 export const AdressBlock = styled.div`
@@ -35,12 +43,24 @@ export const ImageThumb = styled.div`
 `;
 
 export const TitleValuesWrap = styled.div`
+  margin-top: 36px;
+
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     display: flex;
     justify-content: space-between;
     align-items: start;
     gap: 94px;
-    margin-top: 36px;
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    margin-top: 120px;
+  }
+`;
+
+export const ValuesTitleWrap = styled.div`
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    width: 365px;
   }
 `;
 
@@ -62,5 +82,10 @@ export const AboutText = styled.p`
       height: 110px;
       background: ${(props) => props.theme.colors.accent};
     }
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    width: 630px;
+    margin-top: 0;
   }
 `;

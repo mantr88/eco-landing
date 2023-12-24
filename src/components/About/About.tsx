@@ -7,6 +7,7 @@ import {
   CopyrightText,
   ImageThumb,
   TitleValuesWrap,
+  ValuesTitleWrap,
 } from "./About.styled";
 
 export function About() {
@@ -29,6 +30,7 @@ export function About() {
       </ImageThumb>
       <TitleValuesWrap>
         <SectionTitle>Main values of our company</SectionTitle>
+        <ValuesTitleWrap></ValuesTitleWrap>
         <AboutText>
           EcoSolution envisions a world where sustainable energy solutions power
           a brighter and cleaner future for all. We aspire to be at the
