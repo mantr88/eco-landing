@@ -1,18 +1,21 @@
 import { scrolledTo } from "../../helpers/scroledTo";
+import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
 import { ArrowRight } from "../../ui/svgElements/ArrowRight";
 import {
   ArrowWrap,
   BannerLink,
   BannerSection,
   BannerText,
-  BannerTitle,
+  BannerTitleWrap,
   WrapText,
 } from "./Banner.styled";
 
 export function Banner() {
   return (
     <BannerSection id="banner-section">
-      <BannerTitle>RENEWABLE ENERGY For any task</BannerTitle>
+      <BannerTitleWrap>
+        <SectionTitle>RENEWABLE ENERGY For any task</SectionTitle>
+      </BannerTitleWrap>
       <WrapText>
         <BannerText>
           Development and implementation of renewable non-polluting energy

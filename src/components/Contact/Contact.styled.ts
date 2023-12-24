@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ContactSection = styled.section`
+  margin-top: 36px;
+
   text-align: "center";
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {

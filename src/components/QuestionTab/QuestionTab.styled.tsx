@@ -7,9 +7,10 @@ interface CollapseProps {
 export const Accordion = styled.ul`
   grid-column-end: 2;
   grid-row-end: 2;
+  margin-top: 27px;
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
-    margin-top: 36px;
+    margin-top: 0;
   }
 `;
 

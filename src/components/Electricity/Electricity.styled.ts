@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ElectricitySection = styled.section`
   position: relative;
+  margin-top: 36px;
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     margin-top: 100px;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const BannerSection = styled.section`
   position: relative;
   padding-top: 222px;
+
   & > * {
     margin-bottom: 24px;
   }
@@ -22,11 +23,29 @@ export const BannerSection = styled.section`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     display: flex;
-    gap: 65px;
+    justify-content: space-between;
 
     &::after {
       width: 708px;
     }
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    gap: 296px;
+
+    & > * {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      width: 1240px;
+    }
+  }
+`;
+
+export const BannerTitleWrap = styled.div`
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    width: 485px;
   }
 `;
 
@@ -41,14 +60,13 @@ export const WrapText = styled.div`
     display: flex;
     gap: 43px;
   }
-`;
-
-export const BannerTitle = styled.h2`
-  font-family: "Oswald";
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1;
-  text-transform: uppercase;
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    width: 363px;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    margin-right: 96px;
+  }
 `;
 
 export const BannerText = styled.p`

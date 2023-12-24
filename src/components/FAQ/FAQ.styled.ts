@@ -4,6 +4,7 @@ export const FAQSection = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: 36px;
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     display: grid;

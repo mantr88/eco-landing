@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Title = styled.h2`
-  margin-top: 36px;
+  /* margin-top: 36px; */
   margin-bottom: 24px;
   font-family: "Oswald";
   font-size: 28px;
@@ -11,6 +11,9 @@ export const Title = styled.h2`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     font-size: 36px;
-    /* margin-top: 100px; */
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    font-size: 64px;
   }
 `;
