@@ -4,14 +4,15 @@ import {
   CountUnit,
   CountWrap,
   ElectricitySection,
+  ElectricityTitleWrap,
 } from "./Electricity.styled";
 
 export function Electricity() {
   return (
     <ElectricitySection>
-      <div style={{ display: "inline-block", width: "368px" }}>
+      <ElectricityTitleWrap>
         <SectionTitle>Electricity we produced for all time</SectionTitle>
-      </div>
+      </ElectricityTitleWrap>
       <CountWrap>
         <Count>1.134.147.814</Count>
         <CountUnit>kWh</CountUnit>

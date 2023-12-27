@@ -14,6 +14,6 @@ export const Title = styled.h2`
   }
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
-    font-size: 64px;
+    font-size: 48px;
   }
 `;

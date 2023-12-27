@@ -29,8 +29,9 @@ export function About() {
         />
       </ImageThumb>
       <TitleValuesWrap>
-        <SectionTitle>Main values of our company</SectionTitle>
-        <ValuesTitleWrap></ValuesTitleWrap>
+        <ValuesTitleWrap>
+          <SectionTitle>Main values of our company</SectionTitle>
+        </ValuesTitleWrap>
         <AboutText>
           EcoSolution envisions a world where sustainable energy solutions power
           a brighter and cleaner future for all. We aspire to be at the

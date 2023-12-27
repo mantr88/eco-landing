@@ -46,6 +46,10 @@ export const BannerSection = styled.section`
 export const BannerTitleWrap = styled.div`
   @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
     width: 485px;
+
+    & > h2 {
+      font-size: 64px;
+    }
   }
 `;
 

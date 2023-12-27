@@ -13,6 +13,9 @@ export const Slider = () => {
       "(min-width: 768px)": {
         slides: { perView: () => 2, spacing: 24 },
       },
+      "(min-width: 1280px)": {
+        slides: { perView: () => 2, spacing: 48 },
+      },
     },
     slides: { perView: 1 },
   });
@@ -48,9 +51,9 @@ export const Slider = () => {
           <SectionTitle>Successful cases of our company</SectionTitle>
         </div>
         <div className="control-box-wrap">
-          <p>
+          <p className="slides-numbers">
             0{currentSlide + 1}
-            <span className="slides-numbers">/0{numbersOfSlides}</span>
+            <span className="slides-numbers-modifyed">/0{numbersOfSlides}</span>
           </p>
           <div className="control-btn-wrap">
             <button className="control-btn" onClick={handlePrev}>
@@ -76,8 +79,8 @@ export const Slider = () => {
           <div className="case">
             <div className="case-location-wrap">
               <p className="case-location">
-                Lviv Region, Radekhiv <br />
-                town Private Enterprise “ZAKHIDNYI BUH”
+                Lviv Region, Radekhiv town
+                <br /> Private Enterprise “ZAKHIDNYI BUH”
               </p>
               <a href="#">
                 <ArrowRightTop />

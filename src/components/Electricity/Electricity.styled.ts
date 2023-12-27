@@ -8,6 +8,19 @@ export const ElectricitySection = styled.section`
     margin-top: 100px;
     text-align: center;
   }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    margin-top: 120px;
+  }
+`;
+
+export const ElectricityTitleWrap = styled.div`
+  display: inline-block;
+  width: 368px;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    width: 491px;
+  }
 `;
 
 export const CountWrap = styled.div`
@@ -53,6 +66,10 @@ export const Count = styled.p`
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     font-size: 100px;
   }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    font-size: 164px;
+  }
 `;
 
 export const CountUnit = styled.p`
@@ -63,5 +80,9 @@ export const CountUnit = styled.p`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     font-size: 28px;
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    font-size: 48px;
   }
 `;

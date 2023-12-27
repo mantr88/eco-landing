@@ -49,7 +49,7 @@ export const TitleValuesWrap = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: start;
-    gap: 94px;
+    /* gap: 94px; */
     margin-top: 100px;
   }
 
@@ -60,18 +60,19 @@ export const TitleValuesWrap = styled.div`
 
 export const ValuesTitleWrap = styled.div`
   @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
-    width: 365px;
+    width: 390px;
   }
 `;
 
 export const AboutText = styled.p`
   text-align: justify;
   letter-spacing: -0.64px;
+  margin-top: 36px;
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     position: relative;
-    margin-top: 36px;
-    width: 342px;
+    width: 396px;
+    margin-top: 0;
 
     &::before {
       content: " ";
@@ -85,7 +86,11 @@ export const AboutText = styled.p`
   }
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
-    width: 630px;
-    margin-top: 0;
+    width: 459px;
+
+    &::before {
+      height: 87px;
+      left: -161px;
+    }
   }
 `;
