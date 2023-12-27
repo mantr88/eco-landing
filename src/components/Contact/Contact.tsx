@@ -12,6 +12,7 @@ import {
   AdressItemWrap,
   ContactSection,
   ContactSectionContainer,
+  ContactsTitleWrap,
   ContactsWrap,
   SocialLink,
   SocialWrap,
@@ -19,8 +20,10 @@ import {
 
 export function Contact() {
   return (
-    <ContactSection id="contact-us-section" style={{ textAlign: "center" }}>
-      <SectionTitle>Contact us</SectionTitle>
+    <ContactSection id="contact-us-section">
+      <ContactsTitleWrap>
+        <SectionTitle>Contact us</SectionTitle>
+      </ContactsTitleWrap>
       <ContactSectionContainer>
         <ContactsWrap>
           <AdressBlockWrap>

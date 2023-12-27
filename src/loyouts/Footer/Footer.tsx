@@ -9,6 +9,7 @@ import { WrapTitle } from "../Header/Header.styled";
 import {
   FirstLineWrap,
   FooterContactsWrap,
+  FooterEmailLink,
   FooterSocialLinksMobileWrap,
   FooterSocialLinksTableWrap,
   FooterWrap,
@@ -43,7 +44,9 @@ export function Footer() {
         <a href="https://maps.app.goo.gl/2WzseMV8Ymfioi3p7">
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
         </a>
-        <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
+        <FooterEmailLink href="mailto:office@ecosolution.com">
+          office@ecosolution.com
+        </FooterEmailLink>
         <a>ecosolution © 2023</a>
       </FooterContactsWrap>
     </FooterWrap>

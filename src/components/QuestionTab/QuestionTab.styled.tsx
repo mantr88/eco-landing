@@ -18,6 +18,11 @@ export const AccordionItem = styled.li`
   padding-top: 16px;
   padding-bottom: 16px;
   position: relative;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 `;
 
 export const AccordionHeaderWrap = styled.div`
@@ -38,6 +43,10 @@ export const AccordionHeaderWrap = styled.div`
     @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
       width: 342px;
     }
+
+    @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+      width: 596px;
+    }
   }
 `;
 
@@ -45,6 +54,11 @@ export const AccordionHeader = styled.button`
   text-align: justify;
   font-size: 18px;
   letter-spacing: -0.72px;
+  color: ${(props) => props.theme.colors.main_text};
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
 `;
 
 export const AccordionHeaderTitle = styled.div`
@@ -64,4 +78,9 @@ export const AccordionBody = styled.p`
   text-align: justify;
   font-size: 14px;
   letter-spacing: -0.56px;
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
 `;

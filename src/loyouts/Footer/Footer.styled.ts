@@ -15,6 +15,10 @@ export const FooterWrap = styled.footer`
 
     margin-top: 124px;
   }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    margin-top: 160px;
+  }
 `;
 
 export const FirstLineWrap = styled.div`
@@ -40,6 +44,11 @@ export const FirstLineWrap = styled.div`
 
     @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
       width: 708px;
+    }
+
+    @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+      width: 1240px;
+      top: -40px;
     }
   }
 `;
@@ -100,6 +109,10 @@ export const FooterSocialLinksTableWrap = styled.div`
     margin-top: 24px;
     margin-left: 85px;
   }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    margin-left: 512px;
+  }
 `;
 
 export const FooterContactsWrap = styled.div`
@@ -113,5 +126,11 @@ export const FooterContactsWrap = styled.div`
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     flex-direction: row;
     margin-bottom: 40px;
+  }
+`;
+
+export const FooterEmailLink = styled.a`
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    margin-left: 326px;
   }
 `;

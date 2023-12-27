@@ -1,6 +1,6 @@
 import QuestionTab from "../QuestionTab/QuestionTab";
 import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
-import { FAQSection, LinkWrap, Question } from "./FAQ.styled";
+import { FAQSection, FaqTitleWrap, LinkWrap, Question } from "./FAQ.styled";
 import { scrolledTo } from "../../helpers/scroledTo";
 import { Link } from "../../ui/Link/Link";
 
@@ -30,9 +30,10 @@ const faqList = [
 export function FAQ() {
   return (
     <FAQSection id="faq-section">
-      <SectionTitle>Frequently Asked Questions</SectionTitle>
+      <FaqTitleWrap>
+        <SectionTitle>Frequently Asked Questions</SectionTitle>
+      </FaqTitleWrap>
       <QuestionTab faqList={faqList} />
-
       <LinkWrap>
         <Question>Didn't find the answer to your question?</Question>
         <Link onClick={() => scrolledTo("contact-us-section")}>Contact Us</Link>

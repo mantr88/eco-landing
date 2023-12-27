@@ -13,6 +13,18 @@ export const FAQSection = styled.section`
     gap: 24px;
     margin-top: 100px;
   }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    margin-top: 120px;
+  }
+`;
+
+export const FaqTitleWrap = styled.div`
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    width: 398px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const LinkWrap = styled.div`
@@ -25,6 +37,11 @@ export const LinkWrap = styled.div`
     top: 625px;
     left: 376px;
     transform: translateX(0%);
+
+    @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+      top: 576px;
+      left: 781px;
+    }
   }
 `;
 

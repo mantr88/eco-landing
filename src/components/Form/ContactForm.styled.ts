@@ -21,6 +21,11 @@ export const FormWrap = styled.div`
     margin-top: 0;
     min-width: 344px;
   }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    min-width: 596px;
+    padding: 48px;
+  }
 `;
 
 export const InputField = styled(Field)`
@@ -40,6 +45,15 @@ export const InputField = styled(Field)`
   border-bottom: 1px solid
     ${(props) =>
       props.border ? props.theme.colors.error_text : props.theme.colors.accent};
+
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
+    padding-bottom: 8px;
+    padding-top: 12px;
+    &::placeholder {
+      font-size: 20px;
+      letter-spacing: -0.8px;
+    }
+  }
 `;
 
 export const ErrorElement = styled.div`
