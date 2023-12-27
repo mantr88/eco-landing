@@ -5,8 +5,6 @@ export const Container = styled.div`
   padding-left: 20px;
   padding-right: 20px;
 
-  border: 2px solid tomato;
-
   @media screen and (min-width: ${(props) => props.theme.breakpoints.s}) {
     width: 480px;
   }
