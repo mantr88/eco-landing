@@ -69,7 +69,7 @@ export const Slider = () => {
         <div className="keen-slider__slide number-slide1">
           <div className="slide-thumb-image">
             <img
-              srcSet="./assets/image/beautiful-view-wind-turbines-grass-covered-field-320.jpg 320w, ./assets/image/beautiful-view-wind-turbines-grass-covered-field-640.jpg 640w, ./assets/image/beautiful-view-wind-turbines-grass-covered-field-960.jpg 960w"
+              srcSet="./assets/image/beautiful-view-wind-turbines-grass-covered-field-320.jpg 320w, ./assets/image/beautiful-view-wind-turbines-grass-covered-field-640.jpg 640w, ./assets/image/beautiful-view-wind-turbines-grass-covered-field-960.jpg 960w, ./assets/image/beautiful-view-wind-turbines-grass-covered-field-1788.jpg 1440w"
               alt="wind turbines"
               src="./assets/image/beautiful-view-wind-turbines-grass-covered-field-320.jpg"
               sizes="100%"
@@ -97,7 +97,7 @@ export const Slider = () => {
         <div className="keen-slider__slide number-slide2">
           <div className="slide-thumb-image">
             <img
-              srcSet="./assets/image/solar-battery-320.jpg 320w, ./assets/image/solar-battery-640.jpg 640w, ./assets/image/solar-battery-960.jpg 960w"
+              srcSet="./assets/image/solar-battery-320.jpg 320w, ./assets/image/solar-battery-640.jpg 640w, ./assets/image/solar-battery-960.jpg 960w,./assets/image/solar-battery-1780.jpg 1440w"
               src="./assets/image/solar-battery-320.jpg"
               alt="Solar Panels"
               sizes="100%"
@@ -125,7 +125,7 @@ export const Slider = () => {
         <div className="keen-slider__slide number-slide3">
           <div className="slide-thumb-image">
             <img
-              srcSet="./assets/image/rivne-biotech-320.jpg 320w, ./assets/image/rivne-biotech-640.jpg 640w, ./assets/image/rivne-biotech-960.jpg 960w"
+              srcSet="./assets/image/rivne-biotech-320.jpg 320w, ./assets/image/rivne-biotech-640.jpg 640w, ./assets/image/rivne-biotech-960.jpg 960w, ./assets/image/rivne-biotech-1788.jpg 1440w"
               src="./assets/image/rivne-biotech-320.jpg"
               alt="Thermal modules"
               sizes="100%"
@@ -151,7 +151,7 @@ export const Slider = () => {
         <div className="keen-slider__slide number-slide4">
           <div className="slide-thumb-image">
             <img
-              srcSet="./assets/image/kherson-helthy-farm-320.jpg 320w, ./assets/image/kherson-helthy-farm-640.jpg 640w, ./assets/image/kherson-helthy-farm-960.jpg 960w"
+              srcSet="./assets/image/kherson-helthy-farm-320.jpg 320w, ./assets/image/kherson-helthy-farm-640.jpg 640w, ./assets/image/kherson-helthy-farm-960.jpg 960w,./assets/image/kherson-helthy-farm-1788.jpg 1440w"
               src="./assets/image/kherson-helthy-farm-320.jpg"
               alt="wind turbines"
               sizes="100%"
@@ -177,7 +177,7 @@ export const Slider = () => {
         <div className="keen-slider__slide number-slide5">
           <div className="slide-thumb-image">
             <img
-              srcSet="./assets/image/zaporizhia-biotech-320.jpg 320w, ./assets/image/zaporizhia-biotech-640.jpg 640w, ./assets/image/zaporizhia-biotech-960.jpg 960w"
+              srcSet="./assets/image/zaporizhia-biotech-320.jpg 320w, ./assets/image/zaporizhia-biotech-640.jpg 640w, ./assets/image/zaporizhia-biotech-960.jpg 960w,./assets/image/zaporizhia-biotech-1788.jpg 1440w"
               src="./assets/image/zaporizhia-biotech-320.jpg"
               alt="Mini nuclear stations"
               className="slide-image"

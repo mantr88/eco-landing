@@ -37,14 +37,14 @@ export function Values() {
       </Values2>
       <Values3>
         <img
-          srcSet="./assets/image/wind-farms-fields-342.jpg 342w, ./assets/image/wind-farms-fields-684.jpg 684w, ./assets/image/wind-farms-fields-1026.jpg 1026w"
+          srcSet="./assets/image/wind-farms-fields-342.jpg 320w, ./assets/image/wind-farms-fields-684.jpg 640w, ./assets/image/wind-farms-fields-1026.jpg 1024w, ./assets/image/wind-farms-fields-1788.jpg 1440w"
           src="./assets/image/wind-farms-fields-342.jpg"
           alt="wind farms workers"
         />
       </Values3>
       <Values4>
         <img
-          srcSet="./assets/image/man-worker-firld-by-solar-panels-342.jpg 342w, ./assets/image/man-worker-firld-by-solar-panels-684.jpg 684w, ./assets/image/man-worker-firld-by-solar-panels-1026.jpg 1026w"
+          srcSet="./assets/image/man-worker-firld-by-solar-panels-342.jpg 320w, ./assets/image/man-worker-firld-by-solar-panels-684.jpg 640w, ./assets/image/man-worker-firld-by-solar-panels-1026.jpg 1024w, ./assets/image/man-worker-firld-by-solar-panels-1788.jpg 1440w"
           src="./assets/image/man-worker-firld-by-solar-panels-342.jpg"
           alt="solar farms workers"
         />

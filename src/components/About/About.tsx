@@ -22,9 +22,9 @@ export function About() {
       </AdressBlock>
       <ImageThumb>
         <img
-          srcSet="./assets/image/wind-turbine-clean-energy-320.jpg 320w, ./assets/image/wind-turbine-clean-energy-640.jpg 640w, ./assets/image/wind-turbine-clean-energy-960.jpg 960w"
+          srcSet="./assets/image/wind-turbine-clean-energy-320.jpg 320w, ./assets/image/wind-turbine-clean-energy-640.jpg 640w, ./assets/image/wind-turbine-clean-energy-960.jpg 960w,./assets/image/wind-turbine-clean-energy-1240.jpg 1280w,./assets/image/wind-turbine-clean-energy-2480.jpg 2560w"
           src="./assets/image/wind-turbine-clean-energy-320.jpg"
-          sizes="(max-width: 767px) 50vw, 100vw"
+          sizes="100vw"
           alt="wind turbine"
         />
       </ImageThumb>
