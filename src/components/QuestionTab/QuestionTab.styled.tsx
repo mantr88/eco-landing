@@ -1,8 +1,5 @@
 import styled from "styled-components";
-
-interface CollapseProps {
-  isOpen: boolean;
-}
+import React from "react";
 
 export const Accordion = styled.ul`
   grid-column-end: 2;
@@ -66,7 +63,17 @@ export const AccordionHeaderTitle = styled.div`
   gap: 8px;
 `;
 
-export const AccordionCollapse = styled.div<CollapseProps>`
+const e = React.createElement;
+
+const filter =
+  (tag: string, whiteList: string[]) =>
+  // eslint-disable-next-line
+  ({ children, ...props }: any) => {
+    whiteList.map((i) => delete props[i]);
+    return e(tag, props, children);
+  };
+
+export const AccordionCollapse = styled(filter("div", ["isOpen"]))`
   height: ${(props) => (props.isOpen ? "auto" : 0)};
   overflow: hidden;
   transition: height 0.3s;

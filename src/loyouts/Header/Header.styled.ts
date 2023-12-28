@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface ScrollingProps {
-  scrolling: boolean;
+  scrolling: string;
 }
 
 export const HeaderWrap = styled.header`
@@ -30,7 +30,7 @@ export const CompanyTitle = styled.div<ScrollingProps>`
   path {
     transition: fill 0.4s;
     fill: ${(props) =>
-      props.scrolling
+      props.scrolling === "true"
         ? props.theme.colors.accent
         : props.theme.colors.main_text};
   }
