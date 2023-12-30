@@ -1,12 +1,15 @@
-import "./Slider.styled.css";
+import { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import "./Slider.styled.css";
 import { ArrowRightTop } from "../../ui/svgElements/ArrowRightTop";
 import { ArrowSliderLeft } from "../../ui/svgElements/ArrowSliderLeft";
 import { ArrowSliderRight } from "../../ui/svgElements/ArrowSliderRight";
 import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
 
 export const Slider = () => {
+  const [currentSlide, setCurrentSlide] = useState(1);
+  const [quantityOfSlides, setQuantityOfSlides] = useState(0);
   const [ref, slider] = useKeenSlider<HTMLDivElement>({
     loop: true,
     breakpoints: {
@@ -18,28 +21,25 @@ export const Slider = () => {
       },
     },
     slides: { perView: 1 },
+    created(slides) {
+      if (slides.track.details.slidesLength !== undefined) {
+        setQuantityOfSlides(slides.track.details.slidesLength);
+      }
+    },
+    slideChanged(slides) {
+      if (slides.track.details.rel !== undefined) {
+        setCurrentSlide(slides.track.details.rel + 1);
+      }
+    },
   });
-  let currentSlide: number | null = null;
-  if (slider.current) {
-    currentSlide = slider.current.track.details.rel;
-    // slider.current.slides.length - (slider.current.slides.length - 1);
-  }
-  let numbersOfSlides = 5;
-
-  if (slider.current) {
-    numbersOfSlides = slider.current.track.details.slidesLength;
-  }
 
   const handlePrev = () => {
-    currentSlide = slider.current.track.details.rel;
     if (slider) {
       slider.current.prev();
     }
   };
 
   const handleNext = () => {
-    // console.log(slider.current.track.details.rel);
-    currentSlide = slider.current.track.details.rel;
     if (slider) {
       slider.current.next();
     }
@@ -52,8 +52,10 @@ export const Slider = () => {
         </div>
         <div className="control-box-wrap">
           <p className="slides-numbers">
-            0{currentSlide + 1}
-            <span className="slides-numbers-modifyed">/0{numbersOfSlides}</span>
+            0{currentSlide}
+            <span className="slides-numbers-modifyed">
+              /0{quantityOfSlides}
+            </span>
           </p>
           <div className="control-btn-wrap">
             <button className="control-btn" onClick={handlePrev}>
