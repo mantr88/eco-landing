@@ -93,6 +93,7 @@ export const BannerLink = styled.a`
 
   border-radius: 500px;
   border: 1px solid ${(props) => props.theme.colors.accent};
+  transition: all 0.4s;
 
   &:hover {
     border-color: ${(props) => props.theme.colors.main_text};

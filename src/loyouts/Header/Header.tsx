@@ -52,12 +52,6 @@ export function Header() {
           </CompanyTitle>
           <Tagline />
         </WrapTitle>
-        {/* <Wrap>
-          <a>Get in touch</a>
-          <div>
-            <Burger />
-          </div>
-        </Wrap> */}
         <Nav>
           <BurgerBtn onClick={() => setActive(true)}>
             <Burger />

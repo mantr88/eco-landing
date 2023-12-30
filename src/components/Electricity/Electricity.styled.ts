@@ -15,8 +15,11 @@ export const ElectricitySection = styled.section`
 `;
 
 export const ElectricityTitleWrap = styled.div`
-  display: inline-block;
-  width: 368px;
+  text-align: center;
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+    display: inline-block;
+    width: 368px;
+  }
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
     width: 491px;
@@ -40,7 +43,7 @@ export const CountWrap = styled.div`
     content: "";
 
     position: absolute;
-    top: -111px;
+    top: -72px;
     left: 50%;
     transform: translateX(-50%);
     width: 1px;
@@ -50,6 +53,7 @@ export const CountWrap = styled.div`
 
     @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
       height: 87px;
+      top: -111px;
     }
   }
 `;

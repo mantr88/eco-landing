@@ -11,6 +11,11 @@ export const LinkStyled = styled.a`
 
   border-radius: 500px;
   background: ${(props) => props.theme.colors.accent};
+  transition: all 0.4s;
+
+  & circle {
+    transition: all 0.4s;
+  }
 
   &:hover {
     background: ${(props) => props.theme.colors.main_text};

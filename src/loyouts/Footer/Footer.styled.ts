@@ -5,6 +5,7 @@ export const FooterWrap = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   margin-top: 61px;
 
   letter-spacing: -0.64px;
@@ -55,9 +56,15 @@ export const FirstLineWrap = styled.div`
 
 export const LinkTitle = styled.a`
   display: block;
-  &:hover {
+
+  & {
     path {
       transition: fill 0.4s;
+    }
+  }
+
+  &:hover {
+    path {
       fill: ${(props) => props.theme.colors.accent};
     }
   }
@@ -75,9 +82,14 @@ export const LinkToTop = styled.a`
 
   border-radius: 100px;
   background: ${(props) => props.theme.colors.accent};
+  transition: all 0.4s;
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     margin-left: auto;
+  }
+
+  & path {
+    transition: all 0.4s;
   }
 
   &:hover {
@@ -117,14 +129,15 @@ export const FooterSocialLinksTableWrap = styled.div`
 
 export const FooterContactsWrap = styled.div`
   width: 100%;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   gap: 16px;
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
     flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 40px;
   }
 `;

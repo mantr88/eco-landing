@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { Content, Overlay } from "./PopupWindow.styled";
 import { Props, QuerySelector } from "./PopupWindow.types";
+import { Container } from "../../loyouts/MainLoyout/MainLoyout.styles";
 
 const PopupWindow = ({ active, setActive, children }: Props) => {
   useEffect(() => {
@@ -24,13 +25,15 @@ const PopupWindow = ({ active, setActive, children }: Props) => {
         setActive(false);
       }}
     >
-      <Content
-        onClick={(e) => {
-          e.stopPropagation();
-        }}
-      >
-        {children}
-      </Content>
+      <Container>
+        <Content
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+        >
+          {children}
+        </Content>
+      </Container>
     </Overlay>,
     document.querySelector("#popup-root") as QuerySelector
   );

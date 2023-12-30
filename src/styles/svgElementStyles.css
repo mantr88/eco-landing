@@ -11,3 +11,30 @@
     height: 24px;
   }
 }
+
+.socialLinkFacebookDark path {
+  transition: fill 0.4s, stroke 0.4s;
+}
+
+.socialLinkFacebookDark:hover {
+  cursor: pointer;
+  path:nth-child(1) {
+    fill: #97d28b;
+  }
+  path:nth-child(2) {
+    stroke: #97d28b;
+  }
+}
+
+.socialLinkInstagramDark path {
+  transition: stroke 0.4s;
+}
+
+.socialLinkInstagramDark:hover {
+  cursor: pointer;
+}
+
+.socialLinkInstagramDark:hover path {
+  cursor: pointer;
+  stroke: #97d28b;
+}

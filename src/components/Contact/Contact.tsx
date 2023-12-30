@@ -14,7 +14,6 @@ import {
   ContactSectionContainer,
   ContactsTitleWrap,
   ContactsWrap,
-  SocialLink,
   SocialWrap,
 } from "./Contact.styled";
 
@@ -62,12 +61,12 @@ export function Contact() {
           <AdressBlockWrap>
             <AdressBlockTitle>Social Networks:</AdressBlockTitle>
             <SocialWrap>
-              <SocialLink href="#">
+              <a href="#">
                 <FacebookDark />
-              </SocialLink>
-              <SocialLink href="#">
+              </a>
+              <a href="#">
                 <InstagramDark />
-              </SocialLink>
+              </a>
             </SocialWrap>
           </AdressBlockWrap>
         </ContactsWrap>

@@ -75,6 +75,8 @@ export const SubmitBtn = styled.button`
   border-radius: 500px;
   border: 1px solid ${(props) => props.theme.colors.accent};
 
+  transition: all 0.4s;
+
   &:hover {
     border-color: ${(props) => props.theme.colors.main_text};
     background: ${(props) => props.theme.colors.main_text};

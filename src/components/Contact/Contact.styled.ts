@@ -71,6 +71,10 @@ export const AdressItemWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
+
+  & path {
+    transition: stroke 0.4s;
+  }
   &:hover path {
     stroke: #97d28b;
   }
@@ -94,11 +98,5 @@ export const SocialWrap = styled.div`
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
     gap: 8px;
-  }
-`;
-
-export const SocialLink = styled.a`
-  &:hover path {
-    stroke: #97d28b;
   }
 `;

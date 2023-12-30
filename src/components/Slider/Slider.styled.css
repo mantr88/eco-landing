@@ -88,6 +88,12 @@
   gap: 10px;
   border-radius: 100px;
   border: 1px solid #173d33;
+
+  transition: border-color 0.4s;
+}
+
+.arrow-slider path {
+  transition: stroke 0.4s;
 }
 
 .control-btn:hover {
@@ -229,6 +235,14 @@
     width: 500px;
     top: -24px;
   }
+}
+
+.arrow-right-top path {
+  transition: all 0.4s;
+}
+
+.arrow-right-top rect {
+  transition: all 0.4s;
 }
 
 .arrow-right-top:hover path {

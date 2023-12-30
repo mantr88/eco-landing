@@ -19,6 +19,8 @@ export const Overlay = styled.div`
 export const Content = styled.div`
   position: absolute;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 320px;
   height: 100vh;
   margin-top: 36px;
@@ -29,10 +31,12 @@ export const Content = styled.div`
   backdrop-filter: blur(12.5px);
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.s}) {
-    right: 4%;
+    left: auto;
+    right: 30px;
+    transform: translateX(0);
   }
 
   @media screen and (min-width: ${(props) => props.theme.breakpoints.l}) {
-    right: 2.5%;
+    right: 20px;
   }
 `;

@@ -38,7 +38,7 @@ export const Slider = () => {
   };
 
   const handleNext = () => {
-    console.log(slider.current.track.details.rel);
+    // console.log(slider.current.track.details.rel);
     currentSlide = slider.current.track.details.rel;
     if (slider) {
       slider.current.next();

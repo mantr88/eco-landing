@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  position: relative;
+  height: 100%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;

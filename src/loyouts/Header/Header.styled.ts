@@ -51,6 +51,7 @@ export const BurgerBtn = styled.div`
   padding: 4px 12px;
   border-radius: 500px;
   background: ${(props) => props.theme.colors.accent_light};
+  transition: background-color 0.4s;
 
   &:hover {
     background: ${(props) => props.theme.colors.accent};
@@ -78,8 +79,13 @@ export const HeaderLink = styled.a`
     letter-spacing: -0.64px;
 
     border-radius: 500px;
-    background: ${(props) => props.theme.colors.accent};
+    background-color: ${(props) => props.theme.colors.accent};
 
+    transition: all 0.4s;
+
+    & circle {
+      transition: all 0.4s;
+    }
     &:hover {
       background: ${(props) => props.theme.colors.main_text};
       color: ${(props) => props.theme.colors.accent};

@@ -4,6 +4,7 @@ export const scrolledTo = (id: string) => {
   if (section) {
     section.scrollIntoView({
       behavior: "smooth",
+      block: "center",
     });
   }
 };
