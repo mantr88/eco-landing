@@ -1,22 +1,22 @@
-import { useState } from "react";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
-import "./Slider.styled.css";
-import { ArrowRightTop } from "../../ui/svgElements/ArrowRightTop";
-import { ArrowSliderLeft } from "../../ui/svgElements/ArrowSliderLeft";
-import { ArrowSliderRight } from "../../ui/svgElements/ArrowSliderRight";
-import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
+import { useState } from 'react';
+import { useKeenSlider } from 'keen-slider/react';
+import 'keen-slider/keen-slider.min.css';
+import './Slider.styled.css';
+import { ArrowRightTop } from '../../ui/svgElements/ArrowRightTop';
+import { ArrowSliderLeft } from '../../ui/svgElements/ArrowSliderLeft';
+import { ArrowSliderRight } from '../../ui/svgElements/ArrowSliderRight';
+import { SectionTitle } from '../../ui/SectionTitle/SectionTitle';
 
 export const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
-  const [quantityOfSlides, setQuantityOfSlides] = useState(0);
+  const [quantityOfSlides, setQuantityOfSlides] = useState(5);
   const [ref, slider] = useKeenSlider<HTMLDivElement>({
     loop: true,
     breakpoints: {
-      "(min-width: 768px)": {
+      '(min-width: 768px)': {
         slides: { perView: () => 2, spacing: 24 },
       },
-      "(min-width: 1280px)": {
+      '(min-width: 1280px)': {
         slides: { perView: () => 2, spacing: 48 },
       },
     },
@@ -53,9 +53,7 @@ export const Slider = () => {
         <div className="control-box-wrap">
           <p className="slides-numbers">
             0{currentSlide}
-            <span className="slides-numbers-modifyed">
-              /0{quantityOfSlides}
-            </span>
+            <span className="slides-numbers-modifyed">/0{quantityOfSlides}</span>
           </p>
           <div className="control-btn-wrap">
             <button className="control-btn" onClick={handlePrev}>
@@ -89,9 +87,7 @@ export const Slider = () => {
               </a>
             </div>
             <div className="case-description-wrap">
-              <p className="case-description">
-                Wind Power for auto field irrigation
-              </p>
+              <p className="case-description">Wind Power for auto field irrigation</p>
               <p>July 2023</p>
             </div>
           </div>
@@ -117,9 +113,7 @@ export const Slider = () => {
               </a>
             </div>
             <div className="case-description-wrap">
-              <p className="case-description">
-                Solar Panels for industrial use
-              </p>
+              <p className="case-description">Solar Panels for industrial use</p>
               <p>November 2023</p>
             </div>
           </div>
