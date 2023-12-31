@@ -22,8 +22,8 @@ export const Slider = () => {
     },
     slides: { perView: 1 },
     created(slides) {
-      if (slides.track.details.slidesLength !== undefined) {
-        setQuantityOfSlides(slides.track.details.slidesLength);
+      if (slides.slides !== undefined) {
+        setQuantityOfSlides(slides.slides.length);
       }
     },
     slideChanged(slides) {
