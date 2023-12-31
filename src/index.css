@@ -1,64 +1,48 @@
-@import "../node_modules/modern-normalize/modern-normalize.css";
+@import '../node_modules/modern-normalize/modern-normalize.css';
 
 @font-face {
-  font-family: "Fira Sans";
-  src: url("./styles/fonts/FiraSans-Light.ttf");
+  font-family: 'Fira Sans';
+  src: url('./styles/fonts/FiraSans-Light.ttf');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Fira Sans";
-  src: url("./styles/fonts/FiraSans-Regular.ttf");
+  font-family: 'Fira Sans';
+  src: url('./styles/fonts/FiraSans-Regular.ttf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Fira Sans";
-  src: url("./styles/fonts/FiraSans-Medium.ttf");
+  font-family: 'Fira Sans';
+  src: url('./styles/fonts/FiraSans-Medium.ttf');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "FONTSPRING DEMO - All Round Gothic Thick";
-  src: url("./styles/fonts/Fontspring-DEMO-allroundgothic-medium.otf");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "CA Saygon Text";
-  src: url("./styles/fonts/CASaygonText-Regular.woff");
+  font-family: 'Oswald';
+  src: url('./styles/fonts/Oswald-VariableFont_wght.ttf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Oswald";
-  src: url("./styles/fonts/Oswald-VariableFont_wght.ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("./styles/fonts/Oswald-VariableFont_wght.ttf");
+  font-family: 'Oswald';
+  src: url('./styles/fonts/Oswald-VariableFont_wght.ttf');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Oswald";
-  src: url("./styles/fonts/Oswald-VariableFont_wght.ttf");
+  font-family: 'Oswald';
+  src: url('./styles/fonts/Oswald-VariableFont_wght.ttf');
   font-weight: 700;
   font-style: normal;
   font-display: swap;

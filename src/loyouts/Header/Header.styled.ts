@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 interface ScrollingProps {
   scrolling: string;
@@ -11,7 +11,7 @@ export const HeaderWrap = styled.header`
   margin: 0;
   padding-top: 36px;
   padding-bottom: 16px;
-  background-color: ${(props) => props.theme.colors.main_bg};
+  background-color: ${props => props.theme.colors.main_bg};
   z-index: 999;
 `;
 
@@ -29,15 +29,12 @@ export const WrapTitle = styled.div`
 export const CompanyTitle = styled.div<ScrollingProps>`
   path {
     transition: fill 0.4s;
-    fill: ${(props) =>
-      props.scrolling === "true"
-        ? props.theme.colors.accent
-        : props.theme.colors.main_text};
+    fill: ${props => (props.scrolling === 'true' ? props.theme.colors.accent : props.theme.colors.main_text)};
   }
 
   &:hover {
     path {
-      fill: ${(props) => props.theme.colors.accent};
+      fill: ${props => props.theme.colors.accent};
     }
   }
 `;
@@ -50,11 +47,11 @@ export const BurgerBtn = styled.div`
   height: 39px;
   padding: 4px 12px;
   border-radius: 500px;
-  background: ${(props) => props.theme.colors.accent_light};
+  background: ${props => props.theme.colors.accent_light};
   transition: background-color 0.4s;
 
   &:hover {
-    background: ${(props) => props.theme.colors.accent};
+    background: ${props => props.theme.colors.accent};
   }
 `;
 
@@ -69,7 +66,7 @@ export const Nav = styled.div`
 export const HeaderLink = styled.a`
   display: none;
 
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.m}) {
+  @media screen and (min-width: ${props => props.theme.breakpoints.m}) {
     padding: 10px 16px;
     display: inline-flex;
     justify-content: center;
@@ -79,7 +76,7 @@ export const HeaderLink = styled.a`
     letter-spacing: -0.64px;
 
     border-radius: 500px;
-    background-color: ${(props) => props.theme.colors.accent};
+    background-color: ${props => props.theme.colors.accent};
 
     transition: all 0.4s;
 
@@ -87,12 +84,12 @@ export const HeaderLink = styled.a`
       transition: all 0.4s;
     }
     &:hover {
-      background: ${(props) => props.theme.colors.main_text};
-      color: ${(props) => props.theme.colors.accent};
+      background: ${props => props.theme.colors.main_text};
+      color: ${props => props.theme.colors.accent};
     }
 
     &:hover circle {
-      fill: ${(props) => props.theme.colors.accent};
+      fill: ${props => props.theme.colors.accent};
     }
   }
 `;

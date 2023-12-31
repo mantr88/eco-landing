@@ -12,11 +12,11 @@
   }
 }
 
-.socialLinkFacebookDark path {
+.socialLinkFacebook path {
   transition: fill 0.4s, stroke 0.4s;
 }
 
-.socialLinkFacebookDark:hover {
+.socialLinkFacebook:hover {
   cursor: pointer;
   path:nth-child(1) {
     fill: #97d28b;
@@ -26,15 +26,15 @@
   }
 }
 
-.socialLinkInstagramDark path {
+.socialLinkInstagram path {
   transition: stroke 0.4s;
 }
 
-.socialLinkInstagramDark:hover {
+.socialLinkInstagram:hover {
   cursor: pointer;
 }
 
-.socialLinkInstagramDark:hover path {
+.socialLinkInstagram:hover path {
   cursor: pointer;
   stroke: #97d28b;
 }

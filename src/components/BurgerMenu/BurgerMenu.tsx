@@ -1,15 +1,16 @@
-import { Cross } from "../../ui/svgElements/Cross";
+import { Cross } from '../../ui/svgElements/Cross';
 import {
+  CloseText,
   ItemList,
   MobileMenuContainer,
   MobileMenuWrap,
   NavList,
   NetworkWrap,
-} from "./BurgerMenu.styled";
-import { Arrow } from "../../ui/svgElements/Arrow";
-import { Facebook } from "../../ui/svgElements/Facebook";
-import { Instagram } from "../../ui/svgElements/Instagram";
-import { scrolledTo } from "../../helpers/scroledTo";
+} from './BurgerMenu.styled';
+import { Arrow } from '../../ui/svgElements/Arrow';
+import { Facebook } from '../../ui/svgElements/Facebook';
+import { Instagram } from '../../ui/svgElements/Instagram';
+import { scrolledTo } from '../../helpers/scroledTo';
 
 type Props = {
   closeModal: () => void;
@@ -20,14 +21,14 @@ export function BurgerMenu({ closeModal }: Props) {
     <MobileMenuContainer>
       <MobileMenuWrap onClick={closeModal}>
         <Cross />
-        close
+        <CloseText>close</CloseText>
       </MobileMenuWrap>
       <nav>
         <NavList>
           <ItemList
             onClick={() => {
               closeModal();
-              scrolledTo("banner-section");
+              scrolledTo('banner-section');
             }}
           >
             <p>Main</p>
@@ -38,7 +39,7 @@ export function BurgerMenu({ closeModal }: Props) {
           <ItemList
             onClick={() => {
               closeModal();
-              scrolledTo("about-section");
+              scrolledTo('about-section');
             }}
           >
             <p>About</p>
@@ -49,7 +50,7 @@ export function BurgerMenu({ closeModal }: Props) {
           <ItemList
             onClick={() => {
               closeModal();
-              scrolledTo("cases-section");
+              scrolledTo('cases-section');
             }}
           >
             <p>Cases</p>
@@ -60,7 +61,7 @@ export function BurgerMenu({ closeModal }: Props) {
           <ItemList
             onClick={() => {
               closeModal();
-              scrolledTo("faq-section");
+              scrolledTo('faq-section');
             }}
           >
             <p>FAQ</p>
@@ -71,7 +72,7 @@ export function BurgerMenu({ closeModal }: Props) {
           <ItemList
             onClick={() => {
               closeModal();
-              scrolledTo("contact-us-section");
+              scrolledTo('contact-us-section');
             }}
           >
             <p>Contact Us</p>
