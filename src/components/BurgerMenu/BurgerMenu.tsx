@@ -1,12 +1,5 @@
 import { Cross } from '../../ui/svgElements/Cross';
-import {
-  CloseText,
-  ItemList,
-  MobileMenuContainer,
-  MobileMenuWrap,
-  NavList,
-  NetworkWrap,
-} from './BurgerMenu.styled';
+import { CloseText, ItemList, MobileMenuContainer, MobileMenuWrap, NavList, NetworkWrap } from './BurgerMenu.styled';
 import { Arrow } from '../../ui/svgElements/Arrow';
 import { Facebook } from '../../ui/svgElements/Facebook';
 import { Instagram } from '../../ui/svgElements/Instagram';
@@ -30,6 +23,7 @@ export function BurgerMenu({ closeModal }: Props) {
               closeModal();
               scrolledTo('banner-section');
             }}
+            aria-label="Link to the go-to Banner section"
           >
             <p>Main</p>
             <div>
@@ -41,6 +35,7 @@ export function BurgerMenu({ closeModal }: Props) {
               closeModal();
               scrolledTo('about-section');
             }}
+            aria-label="Link to the go-to About section"
           >
             <p>About</p>
             <div>
@@ -52,6 +47,7 @@ export function BurgerMenu({ closeModal }: Props) {
               closeModal();
               scrolledTo('cases-section');
             }}
+            aria-label="Link to the go-to Cases section"
           >
             <p>Cases</p>
             <div>
@@ -63,6 +59,7 @@ export function BurgerMenu({ closeModal }: Props) {
               closeModal();
               scrolledTo('faq-section');
             }}
+            aria-label="Link to the go-to FAQ section"
           >
             <p>FAQ</p>
             <div>
@@ -74,6 +71,7 @@ export function BurgerMenu({ closeModal }: Props) {
               closeModal();
               scrolledTo('contact-us-section');
             }}
+            aria-label="Link to the go-to Contact section"
           >
             <p>Contact Us</p>
             <div>
@@ -83,12 +81,12 @@ export function BurgerMenu({ closeModal }: Props) {
         </NavList>
       </nav>
       <NetworkWrap>
-        <div>
+        <a href="#" aria-label="Link to the go-to company Facebook account">
           <Facebook />
-        </div>
-        <div>
+        </a>
+        <a href="#" aria-label="Link to the go-to company Instagram account">
           <Instagram />
-        </div>
+        </a>
       </NetworkWrap>
     </MobileMenuContainer>
   );

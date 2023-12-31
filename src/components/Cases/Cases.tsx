@@ -1,7 +1,7 @@
-import { Slider } from "../Slider/Slider";
-import { CasesSection } from "./Cases.styled";
+import { Slider } from '../Slider/Slider';
+import { CasesSection } from './Cases.styled';
 
-export function Cases() {
+function Cases() {
   return (
     <>
       <CasesSection id="cases-section">
@@ -10,3 +10,5 @@ export function Cases() {
     </>
   );
 }
+
+export default Cases;

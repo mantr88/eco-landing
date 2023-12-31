@@ -80,5 +80,5 @@ export const ItemList = styled.li`
 export const NetworkWrap = styled.div`
   display: flex;
   gap: 8px;
-  margin-top: 180%;
+  margin-top: 395px;
 `;

@@ -56,10 +56,10 @@ export const Slider = () => {
             <span className="slides-numbers-modifyed">/0{quantityOfSlides}</span>
           </p>
           <div className="control-btn-wrap">
-            <button className="control-btn" onClick={handlePrev}>
+            <button className="control-btn" onClick={handlePrev} aria-label="Button to go to the previous slide">
               <ArrowSliderLeft />
             </button>
-            <button className="control-btn" onClick={handleNext}>
+            <button className="control-btn" onClick={handleNext} aria-label="Button to go to the next slide">
               <ArrowSliderRight />
             </button>
           </div>
@@ -82,7 +82,7 @@ export const Slider = () => {
                 Lviv Region, Radekhiv town
                 <br /> Private Enterprise “ZAKHIDNYI BUH”
               </p>
-              <a href="#">
+              <a href="#" aria-label="Link to the go-to case desctiption">
                 <ArrowRightTop />
               </a>
             </div>
@@ -108,7 +108,7 @@ export const Slider = () => {
                 Zhytomyr city <br />
                 Private Enterprise “Bosch”
               </p>
-              <a href="#">
+              <a href="#" aria-label="Link to the go-to case desctiption">
                 <ArrowRightTop />
               </a>
             </div>
@@ -134,7 +134,7 @@ export const Slider = () => {
                 Rivne city <br />
                 Private Enterprise “Biotech”
               </p>
-              <a href="#">
+              <a href="#" aria-label="Link to the go-to case desctiption">
                 <ArrowRightTop />
               </a>
             </div>
@@ -160,7 +160,7 @@ export const Slider = () => {
                 Kherson city <br />
                 Private Enterprise “HealthyFarm”
               </p>
-              <a href="#">
+              <a href="#" aria-label="Link to the go-to case desctiption">
                 <ArrowRightTop />
               </a>
             </div>
@@ -185,7 +185,7 @@ export const Slider = () => {
                 Zaporizhia city <br />
                 Private Enterprise “Biotech”
               </p>
-              <a href="#">
+              <a href="#" aria-label="Link to the go-to case desctiption">
                 <ArrowRightTop />
               </a>
             </div>

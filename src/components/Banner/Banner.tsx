@@ -1,14 +1,7 @@
-import { scrolledTo } from "../../helpers/scroledTo";
-import { SectionTitle } from "../../ui/SectionTitle/SectionTitle";
-import { ArrowRight } from "../../ui/svgElements/ArrowRight";
-import {
-  ArrowWrap,
-  BannerLink,
-  BannerSection,
-  BannerText,
-  BannerTitleWrap,
-  WrapText,
-} from "./Banner.styled";
+import { scrolledTo } from '../../helpers/scroledTo';
+import { SectionTitle } from '../../ui/SectionTitle/SectionTitle';
+import { ArrowRight } from '../../ui/svgElements/ArrowRight';
+import { ArrowWrap, BannerLink, BannerSection, BannerText, BannerTitleWrap, WrapText } from './Banner.styled';
 
 export function Banner() {
   return (
@@ -17,12 +10,8 @@ export function Banner() {
         <SectionTitle>RENEWABLE ENERGY For any task</SectionTitle>
       </BannerTitleWrap>
       <WrapText>
-        <BannerText>
-          Development and implementation of renewable non-polluting energy
-          sources, generating power generation using energy wind, sun, water,
-          biomass
-        </BannerText>
-        <BannerLink onClick={() => scrolledTo("cases-section")}>
+        <BannerText>Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass</BannerText>
+        <BannerLink onClick={() => scrolledTo('cases-section')} aria-label="Link to the go-to Cases section">
           Learn more
           <ArrowWrap>
             <ArrowRight />

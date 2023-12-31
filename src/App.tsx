@@ -1,10 +1,12 @@
-import { About } from "./components/About/About";
-import { Banner } from "./components/Banner/Banner";
-import { Cases } from "./components/Cases/Cases";
-import { Contact } from "./components/Contact/Contact";
-import { Electricity } from "./components/Electricity/Electricity";
-import { FAQ } from "./components/FAQ/FAQ";
-import { MainLoyout } from "./loyouts/MainLoyout/MainLoyout";
+import { lazy } from 'react';
+import { Banner } from './components/Banner/Banner';
+import { Contact } from './components/Contact/Contact';
+import { Electricity } from './components/Electricity/Electricity';
+import { FAQ } from './components/FAQ/FAQ';
+import { MainLoyout } from './loyouts/MainLoyout/MainLoyout';
+
+const About = lazy(() => import('./components/About/About'));
+const Cases = lazy(() => import('./components/Cases/Cases'));
 
 function App() {
   return (
