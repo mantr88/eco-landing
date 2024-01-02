@@ -1,6 +1,6 @@
 # Lending site of company renewable energy
 
-This is lending site of company renewable energye. Features and functionality of this site:
+This is lending site of company renewable energy. Features and functionality of this site:
 
 - In the header, which is fixed in the upper part of the screen, there is a logo that changes color with the hover effect and with scrolling. There is also a burger button, which calls up
   the menu, and a Get in touch button, which, when pressed, smoothly scrolls to the Contact Us section;
