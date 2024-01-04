@@ -4,6 +4,10 @@ interface ScrollingProps {
   scrolling: string;
 }
 
+export interface ProgressBarProps {
+  progressBarWidth: number;
+}
+
 export const HeaderWrap = styled.header`
   position: sticky;
   top: 0;
@@ -92,4 +96,24 @@ export const HeaderLink = styled.a`
       fill: ${props => props.theme.colors.accent};
     }
   }
+`;
+
+export const ProgressContainer = styled.div`
+  position: fixed;
+  top: 0px;
+  z-index: 2000;
+  width: 100%;
+  background-color: #f5f5f5 !important;
+  height: 4px;
+  background: #ccc;
+`;
+
+export const ProgressBar = styled.div<ProgressBarProps>`
+  height: 4px;
+  background: ${props => props.theme.colors.accent};
+  margin-bottom: 4px;
+  transition: width 0.4s;
+  ${props => `
+      width: ${props.progressBarWidth}%;
+    `}
 `;

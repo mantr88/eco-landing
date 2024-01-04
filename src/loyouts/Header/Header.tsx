@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Burger } from '../../ui/svgElements/Burger';
 import { Logo } from '../../ui/svgElements/Logo';
-import { CompanyTitle, HeaderContainer, HeaderWrap, WrapTitle, HeaderLink, Nav, BurgerBtn } from './Header.styled';
+import { CompanyTitle, HeaderContainer, HeaderWrap, WrapTitle, HeaderLink, Nav, BurgerBtn, ProgressContainer, ProgressBar } from './Header.styled';
 import PopupWindow from '../../ui/PopupWindow/PopupWindow';
 import { BurgerMenu } from '../../components/BurgerMenu/BurgerMenu';
 import { scrolledTo } from '../../helpers/scroledTo';
@@ -12,6 +12,7 @@ import { Tagline } from '../../ui/svgElements/Tagline';
 export function Header() {
   const [active, setActive] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+  const [widthBar, setWidthBar] = useState(0);
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -19,6 +20,12 @@ export function Header() {
     } else {
       setScrolling(false);
     }
+
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolledValue = (winScroll / height) * 100;
+
+    setWidthBar(scrolledValue);
   };
 
   useEffect(() => {
@@ -32,6 +39,7 @@ export function Header() {
     document.body.style.overflow = 'visible';
     setActive(false);
   };
+
   return (
     <HeaderWrap>
       <HeaderContainer>
@@ -59,6 +67,9 @@ export function Header() {
             <BurgerMenu closeModal={onClose} />
           </PopupWindow>
         )}
+        <ProgressContainer>
+          <ProgressBar id="myBar" progressBarWidth={widthBar}></ProgressBar>
+        </ProgressContainer>
       </HeaderContainer>
     </HeaderWrap>
   );
