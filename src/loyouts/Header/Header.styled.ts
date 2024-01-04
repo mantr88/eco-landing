@@ -99,7 +99,7 @@ export const HeaderLink = styled.a`
 `;
 
 export const ProgressContainer = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0px;
   z-index: 2000;
   width: 100%;
